@@ -5,3 +5,6 @@
 /.DS_Store
 /uploads/
 /themes/twentytwelve/
+/plugins/.DS_Store
+/plugins/akismet/
+/plugins/wordpress-importer/
