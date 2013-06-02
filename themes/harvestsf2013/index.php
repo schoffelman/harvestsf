@@ -10,33 +10,10 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Blended
+ * @subpackage harvestsf
  */
 
 get_header(); ?>
-
-	<div class="banner row-fluid">
-		<div class="span4">
-			<?php if ( is_active_sidebar( 'Overview Sidebar' ) ) : ?>
-				<?php dynamic_sidebar( 'Overview Sidebar' ); ?>
-				<script type="text/javascript">
-				$(document).ready(function(){
-					$('.banner .enhanced-text-widget').click(function(){
-						var banner_url = $(this).find('a').attr('href');
-						window.open(banner_url, '_self');
-						return true;
-					});
-				});
-				</script>
-			<?php endif; ?>
-		</div>
-		<div class="span8">
-			<div class="slider-container">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider-placeholder.jpg" alt="" />
-			</div>
-		</div>
-		
-	</div>
 
 </header>
 <div id="primary" class="site-content">
@@ -55,7 +32,7 @@ get_header(); ?>
         <article id="post-0" class="post no-results not-found">
 
             <header class="entry-header">
-                <h1 class="entry-title"><?php _e( 'Sometimes, not knowing where you\'re at can be a good thing.', 'blended' ); ?></h1>
+                <h1 class="entry-title"><?php _e( 'Sometimes, not knowing where you\'re at can be a good thing.', 'harvestsf' ); ?></h1>
             </header>
 
             <div class="entry-content">

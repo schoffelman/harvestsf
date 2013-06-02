@@ -43,6 +43,6 @@
                 <div class="social"><div class="follow">Follow Us: </div><a href="http://facebook.com/harvestsf" title="Facebook" class="fb" target="_blank"><div class="text">Facebook</div></a><a href="http://twitter.com/harvestsf" title="Twitter" class="tw" target="_blank"><div class="text">Twitter</div></a></div>
             </hgroup>
             <nav id="main_nav">
-                <h1><a href="/" title="<?php _e( "Harvest Church", 'blended' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/harvest-church-logo.png" alt="<?php _e( "Harvest Church", 'blended' ); ?>"></span></a></h1>
+                <h1><a href="/" title="<?php _e( "Harvest Church", 'harvestsf' ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/harvest-church-logo.png" alt="<?php _e( "Harvest Church", 'harvestsf' ); ?>"></span></a></h1>
                 <?php wp_nav_menu( array( 'theme_location' => 'Main Navigation', 'menu_class' => 'nav-menu' ) ); ?>
             </nav>
