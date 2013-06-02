@@ -44,7 +44,7 @@ body {
   max-width: 940px; }
 
 header {
-  height: 625px; }
+  height: 650px; }
   header hgroup#util_nav {
     font-size: 14px;
     height: 61px;
@@ -87,13 +87,16 @@ header {
     position: absolute;
     top: 74px;
     left: 12px; }
+  header nav#main_nav .nav-menu > li {
+    float: left;
+    margin-left: 55px;
+    position: relative; }
+    header nav#main_nav .nav-menu > li .sub-menu {
+      display: none; }
   header nav#main_nav .menu-main-navigation-container {
     position: absolute;
     top: 142px;
     right: 12px; }
-    header nav#main_nav .menu-main-navigation-container li {
-      float: left;
-      margin-left: 55px; }
     header nav#main_nav .menu-main-navigation-container a {
       color: #2d2e2e;
       font-family: ProximaNova-Light, Arial, sans-serif;
@@ -102,15 +105,35 @@ header {
     header nav#main_nav .menu-main-navigation-container a:hover {
       color: #b23d29;
       text-decoration: none; }
+    header nav#main_nav .menu-main-navigation-container li:hover .sub-menu {
+      background: #f8f8f8;
+      display: block;
+      margin: 0;
+      padding-top: 21px;
+      position: absolute; }
+      header nav#main_nav .menu-main-navigation-container li:hover .sub-menu li {
+        border-top: 1px solid #c8c8c8;
+        display: block;
+        white-space: nowrap; }
+        header nav#main_nav .menu-main-navigation-container li:hover .sub-menu li a {
+          display: block;
+          font-size: 20px;
+          font-weight: 100;
+          padding: 18px 26px;
+          color: #535454; }
+      header nav#main_nav .menu-main-navigation-container li:hover .sub-menu li:hover {
+        background: #b23d29; }
+        header nav#main_nav .menu-main-navigation-container li:hover .sub-menu li:hover a {
+          color: #f8f8f8; }
   header .banner {
     margin-top: 186px; }
     header .banner .widget {
-      background: transparent url(assets/img/green-arrow.png) no-repeat 30px 18px;
+      background: transparent url(assets/img/green-arrow.png) no-repeat 20px 18px;
       color: #b8e7e7;
       height: 155px;
       margin-top: 20px;
       padding-top: 20px;
-      padding-left: 80px; }
+      padding-left: 70px; }
       header .banner .widget h2 {
         font-weight: 100;
         line-height: 30px;
@@ -130,6 +153,26 @@ header {
       margin-top: 20px; }
       header .banner .slider-container img {
         margin-top: 1px; }
+
+#primary p {
+  line-height: 24px;
+  margin-bottom: 30px; }
+#primary a {
+  color: #535454;
+  text-decoration: underline; }
+#primary a:hover {
+  color: #b23d29;
+  text-decoration: underline; }
+#primary #content article h1 {
+  background: transparent url(assets/img/double-quote.png) no-repeat 5px 0;
+  padding-left: 66px;
+  text-transform: uppercase; }
+  #primary #content article h1 a {
+    color: #2d2e2e;
+    text-decoration: none; }
+  #primary #content article h1 a:hover {
+    color: #b23d29;
+    text-decoration: none; }
 
 #footer-wrapper {
   margin-top: 10px;
@@ -162,9 +205,9 @@ header {
       #footer-body .container .tab .divide {
         color: #808181;
         margin: 0 13px; }
-    #footer-body .container footer {
+    #footer-body .container footer .span8 {
       margin-top: 70px; }
-      #footer-body .container footer h2 {
+      #footer-body .container footer .span8 h2 {
         background: transparent url(assets/img/map-marker.png) no-repeat 0 0;
         color: #f8f8f8;
         font-size: 24px;
@@ -172,15 +215,59 @@ header {
         margin: 0 0 auto 20px;
         padding: 5px 0 5px 50px;
         text-transform: uppercase; }
-        #footer-body .container footer h2 .divide {
+        #footer-body .container footer .span8 h2 .divide {
           color: #808181;
           margin: 0 20px; }
-      #footer-body .container footer address {
+      #footer-body .container footer .span8 address {
         margin-left: 70px; }
-        #footer-body .container footer address h4 {
+        #footer-body .container footer .span8 address h4 {
           color: #bebfbf;
           font-size: 17px;
           font-weight: 100;
           line-height: 16px; }
-          #footer-body .container footer address h4 span {
+          #footer-body .container footer .span8 address h4 span {
             color: #f8f8f8; }
+      #footer-body .container footer .span8 address:hover h4 span {
+        color: #e99134; }
+    #footer-body .container footer .span4 {
+      margin-top: 70px; }
+      #footer-body .container footer .span4 h2 {
+        color: #f8f8f8;
+        font-size: 24px;
+        font-weight: 100;
+        margin-bottom: 20px;
+        text-transform: uppercase; }
+        #footer-body .container footer .span4 h2 .text {
+          display: block;
+          float: left; }
+        #footer-body .container footer .span4 h2 .fb {
+          background: transparent url(assets/img/footer-facebook-icon.png) no-repeat 0 0;
+          display: block;
+          float: left;
+          margin-left: 20px;
+          height: 42px;
+          width: 42px; }
+          #footer-body .container footer .span4 h2 .fb span {
+            position: absolute;
+            left: -9999em; }
+        #footer-body .container footer .span4 h2 .fb:hover {
+          background: transparent url(assets/img/footer-facebook-icon-hover.png) no-repeat 0 0; }
+        #footer-body .container footer .span4 h2 .tw {
+          background: transparent url(assets/img/footer-twitter-icon.png) no-repeat 0 0;
+          display: block;
+          float: left;
+          height: 42px;
+          margin-left: 10px;
+          width: 42px; }
+          #footer-body .container footer .span4 h2 .tw span {
+            position: absolute;
+            left: -9999em; }
+        #footer-body .container footer .span4 h2 .tw:hover {
+          background: transparent url(assets/img/footer-twitter-icon-hover.png) no-repeat 0 0; }
+      #footer-body .container footer .span4 .insta {
+        background: #e5e6e6;
+        display: block;
+        padding: 3px;
+        width: 250px; }
+    #footer-body .container footer .span4 .insta:hover {
+      background: #e99134; }

@@ -19,6 +19,8 @@ $orange_hover: #b23d29;
 $yellow_hover: #ffcf01;
 $bg_color: #e5e6e6;
 $divide: #808181;
+$footer_orange: #e99134;
+$gray_border: #c8c8c8;
 
 .left, .alignleft {
 	float: left;
@@ -58,7 +60,7 @@ body {
 }
 
 header {
-  	height: 625px;
+  	height: 650px;
   	hgroup#util_nav {
   		font-size: 14px;
     	height: 61px;
@@ -113,14 +115,18 @@ header {
 			top: 74px;
 			left: 12px;
 		}
+		.nav-menu>li {
+			float: left;
+			margin-left: 55px;
+			position: relative;
+			.sub-menu {
+				display: none;
+			}
+		}
 		.menu-main-navigation-container {
 			position: absolute;
 			top: 142px;
 			right: 12px;
-			li {
-				float: left;
-				margin-left: 55px;
-			}
 			a {
 				color: $main_color;
 				font-family: ProximaNova-Light, Arial, sans-serif;
@@ -131,17 +137,44 @@ header {
 				color: $orange_hover;
 				text-decoration: none;
 			}
+			li:hover {
+				.sub-menu {
+					background: $white;
+					display: block;
+					margin: 0;
+					padding-top: 21px;
+					position: absolute;
+					li {
+						border-top: 1px solid $gray_border;
+						display: block;
+						white-space: nowrap;
+						a {
+							display: block;
+							font-size: 20px;
+							font-weight: 100;
+							padding: 18px 26px;
+							color: $body_font_color;
+						}
+					}
+					li:hover {
+						background: $orange_hover;
+						a {
+							color: $white;
+						}
+					}
+				}
+			}
 		}
 	}
 	.banner {
 		margin-top: 186px;
 		.widget {
-			background: transparent url(assets/img/green-arrow.png) no-repeat 30px 18px;
+			background: transparent url(assets/img/green-arrow.png) no-repeat 20px 18px;
 			color: $header_light_blue;
 			height: 155px;
 			margin-top: 20px;
 			padding-top: 20px;
-			padding-left: 80px;
+			padding-left: 70px;
 			h2 {
 				font-weight: 100;
 				line-height: 30px;
@@ -169,6 +202,38 @@ header {
 				margin-top: 1px;
 			}
 		}
+	}
+}
+
+#primary {
+	p {
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+	a {
+		color: $body_font_color;
+		text-decoration: underline;
+	}
+	a:hover {
+		color: $orange_hover;
+		text-decoration: underline;
+	}
+	#content {
+		article {
+		 	h1 {
+		 		background: transparent url(assets/img/double-quote.png) no-repeat 5px 0;
+		 		padding-left: 66px;
+		 		text-transform: uppercase;
+			 	a {
+				 	color: $main_color;
+				 	text-decoration: none;
+			 	}
+			 	a:hover {
+				 	color: $orange_hover;
+				 	text-decoration: none;
+			 	}
+		 	}
+		}	
 	}
 }
 
@@ -209,30 +274,94 @@ header {
 			}
 		}
 		footer {
-			margin-top: 70px;
-			h2 {
-				background: transparent url(assets/img/map-marker.png) no-repeat 0 0;
-				color: $white;
-				font-size: 24px;
-				font-weight: 100;
-				margin: 0 0 auto 20px;
-				padding: 5px 0 5px 50px;
-				text-transform: uppercase;
-				.divide {
-		    		color: $divide;
-			    	margin: 0 20px;
+			.span8 {
+				margin-top: 70px;
+				h2 {
+					background: transparent url(assets/img/map-marker.png) no-repeat 0 0;
+					color: $white;
+					font-size: 24px;
+					font-weight: 100;
+					margin: 0 0 auto 20px;
+					padding: 5px 0 5px 50px;
+					text-transform: uppercase;
+					.divide {
+			    		color: $divide;
+				    	margin: 0 20px;
+					}
+				}
+				address {
+					margin-left: 70px;
+					h4 {
+						color: #bebfbf;
+						font-size: 17px;
+						font-weight: 100;
+						line-height: 16px;	
+						span {
+							color: $white;
+						}
+					}
+				}
+				address:hover {
+					h4 {
+						span {
+							color: $footer_orange;
+						}
+					}
 				}
 			}
-			address {
-				margin-left: 70px;
-				h4 {
-					color: #bebfbf;
-					font-size: 17px;
+			.span4 {
+				margin-top: 70px;
+				h2{
+					color: $white;
+					font-size: 24px;
 					font-weight: 100;
-					line-height: 16px;	
-					span {
-						color: $white;
+					margin-bottom: 20px;
+					text-transform: uppercase;
+					.text {
+						display: block;
+						float: left;
 					}
+					.fb {
+						background: transparent url(assets/img/footer-facebook-icon.png) no-repeat 0 0;
+						display: block;
+						float: left;
+						margin-left: 20px;
+						height: 42px;
+						width: 42px;
+						span {
+							position: absolute;
+							left: -9999em;
+						}
+					}
+					.fb:hover {
+						background: transparent url(assets/img/footer-facebook-icon-hover.png) no-repeat 0 0;
+					}
+					.tw {
+						background: transparent url(assets/img/footer-twitter-icon.png) no-repeat 0 0;
+						display: block;
+						float: left;
+						height: 42px;
+						margin-left: 10px;
+						width: 42px;
+						span {
+							position: absolute;
+							left: -9999em;
+						}
+					}
+					.tw:hover {
+						background: transparent url(assets/img/footer-twitter-icon-hover.png) no-repeat 0 0;
+					}
+				}
+				.insta {
+					background: $bg_color;
+					display: block;
+					padding: 3px;
+					width: 250px;
+				}
+			}
+			.span4 {
+				.insta:hover {
+					background: $footer_orange;
 				}
 			}
 		}
