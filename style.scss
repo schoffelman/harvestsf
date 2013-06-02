@@ -1,0 +1,171 @@
+/*
+Theme Name:   HarvestSF
+Theme URI:    http://github.com/schoffelman/harvestsf
+Author:       Tim Schoffelman
+Author URI:   http://schoffelman.org/
+Description:  Combines the SASS, Twitter Bootstrap and HTML5 boilerplate into one framework.
+Version:      0.2
+License:      MIT License
+License URI:  http://opensource.org/licenses/MIT
+
+Have fun and give back to others.
+*/
+
+$main_color: #2d2e2e;
+$body_font_color: #535454;
+$header_white: #f8f8f8;
+$header_light_blue: #b8e7e7;
+$orange_hover: #b23d29;
+$yellow_hover: #ffcf01;
+
+.left, .alignleft {
+	float: left;
+	text-align: left;
+}
+.right, .alignright {
+	float: right;
+	text-align: right;
+}
+.center, aligncenter {
+	margin: 0 auto;
+	text-align: center;
+}
+.clearleft {
+	clear: left;
+}
+.clearright {
+	clear: right;
+}
+.clearboth {
+	clear: both;
+}
+
+body {
+	background: transparent url(assets/img/background.jpg) top center repeat;
+	color: $main_color;
+  	font-family: ProximaNova-Light, Arial, sans-serif;
+}
+
+#wrapper {
+	background: transparent url(assets/img/header-background.png) 50% 61px repeat-x;
+}
+
+.container {
+	position: relative;
+	max-width: 940px;
+}
+
+header {
+  	height: 776px;
+  	hgroup#util_nav {
+  		font-size: 14px;
+    	height: 61px;
+    	position: absolute;
+    	right: 12px;
+    	text-transform: uppercase;
+    	top: 22px;
+    	.sunday,
+    	.wednesday {
+	    	float: left;
+    	}
+    	.divide {
+    		color: #808181;
+    		float: left;
+	    	margin: 0 13px;
+    	}
+    	.social {
+    		float: left;
+    		.follow {
+	    		float: left;
+    		}
+	    	.text {
+		    	position: absolute;
+		    	left: -9999em;
+	    	}
+	    	.fb {
+		    	background: transparent url(assets/img/header-facebook-icon.png) no-repeat top center;
+		    	float: left;
+		    	height: 22px;
+		    	margin-left: 15px;
+		    	margin-top: -3px;
+		    	width: 12px;
+	    	}
+	    	.fb:hover {
+		    	background-image: url(assets/img/header-facebook-icon-hover.png);
+	    	}
+	    	.tw {
+		    	background: transparent url(assets/img/header-twitter-icon.png) no-repeat top center;
+		    	float: left;
+		    	height: 19px;
+		    	margin-left: 15px;
+		    	width: 23px;
+	    	}
+	    	.tw:hover {
+		    	background-image: url(assets/img/header-twitter-icon-hover.png);
+	    	}
+    	}
+	}
+	nav#main_nav {
+    	h1 {
+			position: absolute;
+			top: 74px;
+			left: 12px;
+		}
+		.menu-main-navigation-container {
+			position: absolute;
+			top: 142px;
+			right: 12px;
+			li {
+				float: left;
+				margin-left: 55px;
+			}
+			a {
+				color: $main_color;
+				font-family: ProximaNova-Light, Arial, sans-serif;
+				font-size: 24px;
+				text-transform: uppercase;
+			}
+			a:hover {
+				color: $orange_hover;
+				text-decoration: none;
+			}
+		}
+	}
+	.banner {
+		margin-top: 186px;
+		.widget {
+			background: transparent url(assets/img/green-arrow.png) no-repeat 30px 18px;
+			color: $header_light_blue;
+			height: 155px;
+			margin-top: 20px;
+			padding-top: 20px;
+			padding-left: 80px;
+			h2 {
+				font-weight: 100;
+				line-height: 30px;
+				margin: 0;
+				a {
+					color: $header_white;
+					text-transform: uppercase;
+				}
+				a:hover {
+					text-decoration: none;
+					color: $yellow_hover;
+				}
+			}
+		}
+		.widget:hover {
+			cursor: hand;
+			a {
+				text-decoration: none;
+				color: $yellow_hover;
+			}
+		}
+		.slider-container {
+			margin-top: 20px;
+			img { // delete once placeholder is out
+				margin-top: 1px;
+			}
+		}
+	}
+}

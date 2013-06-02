@@ -1,4 +1,4 @@
-harvvestsf
+harvestsf
 ==========
 
 For the HarvestSF.org theme
