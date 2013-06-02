@@ -18,6 +18,7 @@ $header_light_blue: #b8e7e7;
 $orange_hover: #b23d29;
 $yellow_hover: #ffcf01;
 $bg_color: #e5e6e6;
+$divide: #808181;
 
 .left, .alignleft {
 	float: left;
@@ -70,7 +71,7 @@ header {
 	    	float: left;
     	}
     	.divide {
-    		color: #808181;
+    		color: $divide;
     		float: left;
 	    	margin: 0 13px;
     	}
@@ -203,12 +204,37 @@ header {
 				float: left;
 			}
 			.divide {
-	    		color: #808181;
+	    		color: $divide;
 		    	margin: 0 13px;
 			}
 		}
 		footer {
 			margin-top: 70px;
+			h2 {
+				background: transparent url(assets/img/map-marker.png) no-repeat 0 0;
+				color: $white;
+				font-size: 24px;
+				font-weight: 100;
+				margin: 0 0 auto 20px;
+				padding: 5px 0 5px 50px;
+				text-transform: uppercase;
+				.divide {
+		    		color: $divide;
+			    	margin: 0 20px;
+				}
+			}
+			address {
+				margin-left: 70px;
+				h4 {
+					color: #bebfbf;
+					font-size: 17px;
+					font-weight: 100;
+					line-height: 16px;	
+					span {
+						color: $white;
+					}
+				}
+			}
 		}
 	}
 }

@@ -164,3 +164,23 @@ header {
         margin: 0 13px; }
     #footer-body .container footer {
       margin-top: 70px; }
+      #footer-body .container footer h2 {
+        background: transparent url(assets/img/map-marker.png) no-repeat 0 0;
+        color: #f8f8f8;
+        font-size: 24px;
+        font-weight: 100;
+        margin: 0 0 auto 20px;
+        padding: 5px 0 5px 50px;
+        text-transform: uppercase; }
+        #footer-body .container footer h2 .divide {
+          color: #808181;
+          margin: 0 20px; }
+      #footer-body .container footer address {
+        margin-left: 70px; }
+        #footer-body .container footer address h4 {
+          color: #bebfbf;
+          font-size: 17px;
+          font-weight: 100;
+          line-height: 16px; }
+          #footer-body .container footer address h4 span {
+            color: #f8f8f8; }
