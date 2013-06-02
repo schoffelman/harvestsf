@@ -13,10 +13,11 @@ Have fun and give back to others.
 
 $main_color: #2d2e2e;
 $body_font_color: #535454;
-$header_white: #f8f8f8;
+$white: #f8f8f8;
 $header_light_blue: #b8e7e7;
 $orange_hover: #b23d29;
 $yellow_hover: #ffcf01;
+$bg_color: #e5e6e6;
 
 .left, .alignleft {
 	float: left;
@@ -41,7 +42,7 @@ $yellow_hover: #ffcf01;
 }
 
 body {
-	background: transparent url(assets/img/background.jpg) top center repeat;
+	background: $bg_color url(assets/img/background.jpg) top center repeat;
 	color: $main_color;
   	font-family: ProximaNova-Light, Arial, sans-serif;
 }
@@ -145,7 +146,7 @@ header {
 				line-height: 30px;
 				margin: 0;
 				a {
-					color: $header_white;
+					color: $white;
 					text-transform: uppercase;
 				}
 				a:hover {
@@ -166,6 +167,48 @@ header {
 			img { // delete once placeholder is out
 				margin-top: 1px;
 			}
+		}
+	}
+}
+
+#footer-wrapper {
+	margin-top: 10px;
+	min-height: 515px;
+}
+
+#footer-header {
+	background: transparent url(assets/img/footer-header.png) repeat-x 0 0;
+	min-height: 465px;
+	padding-top: 50px;
+}
+
+#footer-body {
+	background: $main_color;	
+	min-height: 465px;
+	.container {
+		position: relative;
+		top: -50px;
+		.tab {
+			background: transparent url(assets/img/footer-container.png) no-repeat 0 0;
+			color: $white;
+			font-size: 14px;
+			height: 24px;
+			left: 0;
+			padding: 17px 70px;
+			position: absolute;
+			text-transform: uppercase;
+			top: 0;	
+			width: 480px;
+			div {
+				float: left;
+			}
+			.divide {
+	    		color: #808181;
+		    	margin: 0 13px;
+			}
+		}
+		footer {
+			margin-top: 70px;
 		}
 	}
 }

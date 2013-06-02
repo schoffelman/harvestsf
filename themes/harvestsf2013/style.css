@@ -32,7 +32,7 @@ Have fun and give back to others.
   clear: both; }
 
 body {
-  background: transparent url(assets/img/background.jpg) top center repeat;
+  background: #e5e6e6 url(assets/img/background.jpg) top center repeat;
   color: #2d2e2e;
   font-family: ProximaNova-Light, Arial, sans-serif; }
 
@@ -130,3 +130,37 @@ header {
       margin-top: 20px; }
       header .banner .slider-container img {
         margin-top: 1px; }
+
+#footer-wrapper {
+  margin-top: 10px;
+  min-height: 515px; }
+
+#footer-header {
+  background: transparent url(assets/img/footer-header.png) repeat-x 0 0;
+  min-height: 465px;
+  padding-top: 50px; }
+
+#footer-body {
+  background: #2d2e2e;
+  min-height: 465px; }
+  #footer-body .container {
+    position: relative;
+    top: -50px; }
+    #footer-body .container .tab {
+      background: transparent url(assets/img/footer-container.png) no-repeat 0 0;
+      color: #f8f8f8;
+      font-size: 14px;
+      height: 24px;
+      left: 0;
+      padding: 17px 70px;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
+      width: 480px; }
+      #footer-body .container .tab div {
+        float: left; }
+      #footer-body .container .tab .divide {
+        color: #808181;
+        margin: 0 13px; }
+    #footer-body .container footer {
+      margin-top: 70px; }

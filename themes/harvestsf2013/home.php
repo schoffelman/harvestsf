@@ -56,13 +56,19 @@ get_header(); ?>
 				        
 				    </div><!-- .entry-header -->
 				    
-				    <div class="entry-content">
+				    <div class="span1"></div>
+				    
+				    <div class="entry-content span10">
+				    
 				        <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'harvestsf' ) ); ?>
-				    </div><!-- .entry-content -->
-				
-				    <div class="entry-meta">
 				        
-				    </div><!-- .entry-meta -->
+					    <div class="entry-meta">
+					        
+					    </div><!-- .entry-meta -->
+					    
+				    </div><!-- .entry-content -->
+				    
+					<div class="clearboth"></div>
 				    
 				</article><!-- #post -->
 
@@ -73,7 +79,7 @@ get_header(); ?>
 
     </div><!-- #content -->
     <div id="sidebar" class="span4">
-	    <?php get_sidebar(); ?>
+	    <?php get_sidebar('event'); ?>
     </div>
 </div><!-- #primary -->
 
