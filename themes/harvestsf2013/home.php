@@ -83,4 +83,14 @@ get_header(); ?>
     </div>
 </div><!-- #primary -->
 
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.widget_recent_entries .crpw-item').click(function(){
+		var event_url = $(this).find('a').attr('href');
+		window.open(event_url, '_self');
+		return true;
+	});
+});
+</script>
+
 <?php get_footer(); ?>

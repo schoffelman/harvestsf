@@ -59,11 +59,13 @@ class Custom_Recent_Posts_Widget extends WP_Widget {
 				<div class="event">
 					
 					<ul>
-						<li><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to <?php the_title_attribute(); ?>" class="crpw-title"><?php the_title(); ?></a></li>
-						<li><?php echo get_the_time(); ?></li>
+						<li class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to <?php the_title_attribute(); ?>" class="crpw-title"><?php the_title(); ?></a></li>
+						<li class="time"><?php echo get_the_time(); ?></li>
 					</ul>
 					
 				</div>
+				
+				<div class="clearboth"></div>
 		
 			</li>
 		<?php
@@ -73,7 +75,7 @@ class Custom_Recent_Posts_Widget extends WP_Widget {
 		 wp_reset_query();
 
 		echo "</ul>\n";
-		echo '<a href="/events" title="All Events">All Events</a>';
+		echo '<a href="/events" title="All Events" class="all-events">All Events</a>';
 		echo $after_widget;
 
 	}

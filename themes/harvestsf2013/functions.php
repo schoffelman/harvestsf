@@ -16,8 +16,8 @@ function harvestsf_widgets_init() {
         'description' => __( 'Appears on the homepage banner section', 'harvestsf' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
     ) );
     
     register_sidebar( array(
@@ -26,8 +26,8 @@ function harvestsf_widgets_init() {
         'description' => __( 'Appears on the homepage right sidebar', 'harvestsf' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
     ) );
 
     register_sidebar( array(
