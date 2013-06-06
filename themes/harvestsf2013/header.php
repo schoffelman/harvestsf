@@ -28,11 +28,15 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.min.js"><\/script>')</script>
 	
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/assets/js/ZeroClipboard.js"></script>
-		<script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/assets/js/googlemapscolorizr.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/assets/js/ZeroClipboard.js"></script>
+	<script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/assets/js/googlemapscolorizr.js"></script>
 
     <?php wp_head(); ?>
+    
+    <script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "e66cc4c6-5267-408b-a467-e17f619e0353", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
 
 </head>
 <body <?php body_class(); ?>>
