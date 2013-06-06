@@ -12,9 +12,6 @@ Supports Thumbs: true
 	position:relative;
 	background:#fff url(loading.gif) no-repeat 50% 50%;
     margin-bottom:10px;
-    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
-    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
-    box-shadow: 0px 1px 5px 0px #4a4a4a;
 }
 .theme-default .nivoSlider img {
 	position:absolute;
@@ -29,13 +26,17 @@ Supports Thumbs: true
 
 .theme-default .nivo-controlNav {
 	text-align: center;
-	padding: 20px 0;
+	padding: 0;
+	bottom: 35px;
+	position: absolute;
+	right: 50px;	
+	z-index: 100;
 }
 .theme-default .nivo-controlNav a {
 	display:inline-block;
 	width:22px;
 	height:22px;
-	background:url(bullets.png) no-repeat;
+	background:url(bullets2.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	margin: 0 2px;
@@ -46,9 +47,9 @@ Supports Thumbs: true
 
 .theme-default .nivo-directionNav a {
 	display:block;
-	width:30px;
-	height:30px;
-	background:url(arrows.png) no-repeat;
+	width:49px;
+	height:100px;
+	background:url(arrows2.png) no-repeat;
 	text-indent:-9999px;
 	border:0;
 	opacity: 0;
@@ -59,11 +60,11 @@ Supports Thumbs: true
 }
 .theme-default:hover .nivo-directionNav a { opacity: 1; }
 .theme-default a.nivo-nextNav {
-	background-position:-30px 0;
-	right:15px;
+	background-position:-49px 0;
+	right:0;
 }
 .theme-default a.nivo-prevNav {
-	left:15px;
+	left:0;
 }
 
 .theme-default .nivo-caption {
