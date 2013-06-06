@@ -127,28 +127,29 @@ header {
           color: #f8f8f8; }
   header .banner {
     margin-top: 186px; }
-    header .banner .widget {
+    header .banner aside.widget {
       background: transparent url(assets/img/green-arrow.png) no-repeat 20px 18px;
       color: #b8e7e7;
       height: 155px;
       margin-top: 20px;
       padding-top: 20px;
       padding-left: 70px; }
-      header .banner .widget h2 {
+      header .banner aside.widget h3.widget-title {
         font-weight: 100;
         line-height: 30px;
         margin: 0; }
-        header .banner .widget h2 a {
+        header .banner aside.widget h3.widget-title a {
           color: #f8f8f8;
           text-transform: uppercase; }
-        header .banner .widget h2 a:hover {
+        header .banner aside.widget h3.widget-title a:hover {
           text-decoration: none;
           color: #ffcf01; }
-    header .banner .widget:hover {
+    header .banner aside.widget:hover {
+      background: transparent url(assets/img/orange-arrow.png?) no-repeat 20px 18px;
       cursor: hand; }
-      header .banner .widget:hover a {
-        text-decoration: none;
-        color: #ffcf01; }
+      header .banner aside.widget:hover h3.widget-title a {
+        color: #ffcf01;
+        text-decoration: none; }
     header .banner .slider-container {
       margin-top: 20px; }
       header .banner .slider-container img {
@@ -173,6 +174,74 @@ header {
   #primary #content article h1 a:hover {
     color: #b23d29;
     text-decoration: none; }
+#primary #content article .entry-meta {
+  padding: 10px 0 40px; }
+#primary #sidebar .widget_recent_entries {
+  background: #f8f8f8;
+  padding-bottom: 60px;
+  position: relative; }
+  #primary #sidebar .widget_recent_entries a.all-events {
+    background: transparent url(assets/img/orange-right-arrow.png) no-repeat 98% 45%;
+    bottom: 17px;
+    padding: 0 20px 0 0;
+    position: absolute;
+    right: 16px;
+    text-decoration: none;
+    text-transform: uppercase; }
+  #primary #sidebar .widget_recent_entries a.all-events:hover {
+    color: #b23d29; }
+  #primary #sidebar .widget_recent_entries h3.widget-title {
+    background: #bebfbf;
+    color: #f8f8f8;
+    padding: 10px 0px 5px;
+    text-align: center;
+    text-transform: uppercase; }
+  #primary #sidebar .widget_recent_entries ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #primary #sidebar .widget_recent_entries ul li.crpw-item {
+      border-bottom: 1px solid #c8c8c8;
+      cursor: hand;
+      cursor: pointer;
+      margin: 0px auto;
+      padding: 20px 0;
+      position: relative;
+      width: 260px; }
+      #primary #sidebar .widget_recent_entries ul li.crpw-item li {
+        background: none;
+        border-bottom: none;
+        margin: 0 0; }
+      #primary #sidebar .widget_recent_entries ul li.crpw-item .crpw-date {
+        background: transparent url(assets/img/event-date-background.png) no-repeat 0 0;
+        float: left;
+        height: 70px;
+        width: 60px; }
+        #primary #sidebar .widget_recent_entries ul li.crpw-item .crpw-date .month {
+          color: #f8f8f8;
+          font-size: 14px;
+          margin-top: 10px;
+          text-align: center;
+          text-transform: uppercase; }
+        #primary #sidebar .widget_recent_entries ul li.crpw-item .crpw-date .day {
+          color: #e99134;
+          font-size: 32px;
+          margin-top: 5px;
+          text-align: center; }
+      #primary #sidebar .widget_recent_entries ul li.crpw-item .event {
+        float: left;
+        padding: 10px 0 10px 20px;
+        width: 180px; }
+        #primary #sidebar .widget_recent_entries ul li.crpw-item .event .title a {
+          font-family: 20px;
+          text-decoration: none; }
+        #primary #sidebar .widget_recent_entries ul li.crpw-item .event .time {
+          font-size: 14px;
+          text-transform: uppercase; }
+    #primary #sidebar .widget_recent_entries ul li.crpw-item:hover .crpw-date {
+      background: transparent url(assets/img/event-date-background-hover.png) no-repeat 0 0; }
+    #primary #sidebar .widget_recent_entries ul li.crpw-item:hover .event .title a {
+      color: #e99134; }
 
 #footer-wrapper {
   margin-top: 10px;
