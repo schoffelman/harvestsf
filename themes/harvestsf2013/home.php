@@ -34,7 +34,7 @@ get_header(); ?>
 		</div>
 		<div class="span8">
 			<div class="slider-container">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/slider-placeholder.jpg" alt="" />
+				<?php if ( function_exists('show_nivo_slider') ) { show_nivo_slider(); } ?>
 			</div>
 		</div>
 		

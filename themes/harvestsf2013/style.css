@@ -152,8 +152,11 @@ header {
         text-decoration: none; }
     header .banner .slider-container {
       margin-top: 20px; }
-      header .banner .slider-container img {
-        margin-top: 1px; }
+      header .banner .slider-container .slider-overlay {
+        background: transparent url(assets/img/slider-mask.png) no-repeat 0 0;
+        height: 600px;
+        width: 620px;
+        position: absolute; }
 
 #primary p {
   line-height: 24px;
