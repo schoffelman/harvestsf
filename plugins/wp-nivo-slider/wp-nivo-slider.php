@@ -137,7 +137,7 @@ jQuery(window).load(function() {
 	?>
 	<?php query_posts( 'cat='.$category.'&posts_per_page=$n_slices' ); if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 		<?php if ( '' != get_the_post_thumbnail() ) : ?>
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+			<a href="<?php the_permalink(); ?>" class="slide-link" title="<?php the_title(); ?>">
 				<?php the_post_thumbnail(); ?>
 			</a>
 		<?php endif ?>
