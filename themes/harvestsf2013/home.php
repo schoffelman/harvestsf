@@ -22,7 +22,9 @@ get_header(); ?>
 				<script type="text/javascript">
 				$(document).ready(function(){
 					$('.banner .enhanced-text-widget').click(function(){
-						var banner_url = $(this).find('a').attr('href');
+						var banner_link = $(this).find('a');
+						var banner_url = banner_link.attr('href');
+						banner_link.css('color','#ffcf01');
 						window.open(banner_url, '_self');
 						return true;
 					});
