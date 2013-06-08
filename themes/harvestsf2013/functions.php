@@ -31,9 +31,9 @@ function harvestsf_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'First Front Page Widget Area', 'harvestsf' ),
-        'id' => 'sidebar-1',
-        'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'harvestsf' ),
+        'name' => __( 'Int Events Sidebar', 'harvestsf' ),
+        'id' => 'int-events-sidebar',
+        'description' => __( 'Appears on the interior event pages. Also used as the default sidebar.', 'harvestsf' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
@@ -41,9 +41,29 @@ function harvestsf_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'Second Front Page Widget Area', 'harvestsf' ),
-        'id' => 'sidebar-2',
-        'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'harvestsf' ),
+        'name' => __( 'Int About Sidebar', 'harvestsf' ),
+        'id' => 'int-about-sidebar',
+        'description' => __( 'Appears on the interior about pages', 'harvestsf' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Int Worship Sidebar', 'harvestsf' ),
+        'id' => 'int-worship-sidebar',
+        'description' => __( 'Appears on the interior worship pages', 'harvestsf' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Int Serve Sidebar', 'harvestsf' ),
+        'id' => 'int-serve-sidebar',
+        'description' => __( 'Appears on the interior serve pages', 'harvestsf' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
