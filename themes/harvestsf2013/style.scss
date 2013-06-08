@@ -51,8 +51,12 @@ body {
   	font-family: ProximaNova-Light, Arial, sans-serif;
 }
 
-#wrapper {
-	background: transparent url(assets/img/header-background.png) 50% 61px repeat-x;
+.home #wrapper {
+	background: transparent url(assets/img/header-background.png) repeat-x 50% 61px;
+}
+
+.page #wrapper {
+	background: transparent url(assets/img/int-bg-green.png) repeat-x 50% 61px;
 }
 
 .container {
@@ -60,113 +64,160 @@ body {
 	max-width: 940px;
 }
 
-header {
-  	height: 650px;
-  	hgroup#util_nav {
-  		font-size: 14px;
-    	height: 61px;
-    	position: absolute;
-    	right: 12px;
-    	text-transform: uppercase;
-    	top: 22px;
-    	.sunday,
-    	.wednesday {
-	    	float: left;
-    	}
-    	.divide {
-    		color: $divide;
-    		float: left;
-	    	margin: 0 13px;
-    	}
-    	.social {
-    		float: left;
-    		.follow {
-	    		float: left;
-    		}
-	    	.text {
-		    	position: absolute;
-		    	left: -9999em;
-	    	}
-	    	.fb {
-		    	background: transparent url(assets/img/header-facebook-icon.png) no-repeat top center;
-		    	float: left;
-		    	height: 22px;
-		    	margin-left: 15px;
-		    	margin-top: -3px;
-		    	width: 12px;
-	    	}
-	    	.fb:hover {
-		    	background-image: url(assets/img/header-facebook-icon-hover.png);
-	    	}
-	    	.tw {
-		    	background: transparent url(assets/img/header-twitter-icon.png) no-repeat top center;
-		    	float: left;
-		    	height: 19px;
-		    	margin-left: 15px;
-		    	width: 23px;
-	    	}
-	    	.tw:hover {
-		    	background-image: url(assets/img/header-twitter-icon-hover.png);
-	    	}
-    	}
+
+nav#main_nav {
+	h2 {
+		position: absolute;
+		top: 74px;
+		left: 12px;
 	}
-	nav#main_nav {
-    	h1 {
-			position: absolute;
-			top: 74px;
-			left: 12px;
+	.nav-menu>li {
+		float: left;
+		margin-left: 55px;
+		position: relative;
+		.sub-menu {
+			display: none;
 		}
-		.nav-menu>li {
-			float: left;
-			margin-left: 55px;
-			position: relative;
+	}
+	.menu-main-navigation-container {
+		position: absolute;
+		top: 142px;
+		right: 12px;
+		z-index: 9999;
+		a {
+			color: $main_color;
+			font-family: ProximaNova-Light, Arial, sans-serif;
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+		a:hover {
+			color: $orange_hover;
+			text-decoration: none;
+		}
+		li:hover {
 			.sub-menu {
-				display: none;
-			}
-		}
-		.menu-main-navigation-container {
-			position: absolute;
-			top: 142px;
-			right: 12px;
-			a {
-				color: $main_color;
-				font-family: ProximaNova-Light, Arial, sans-serif;
-				font-size: 24px;
-				text-transform: uppercase;
-			}
-			a:hover {
-				color: $orange_hover;
-				text-decoration: none;
-			}
-			li:hover {
-				.sub-menu {
-					background: $white;
+				background: $white;
+				display: block;
+				margin: 0;
+				padding-top: 21px;
+				position: absolute;
+				li {
+					border-top: 1px solid $gray_border;
 					display: block;
-					margin: 0;
-					padding-top: 21px;
-					position: absolute;
-					li {
-						border-top: 1px solid $gray_border;
+					white-space: nowrap;
+					a {
 						display: block;
-						white-space: nowrap;
-						a {
-							display: block;
-							font-size: 20px;
-							font-weight: 100;
-							padding: 18px 26px;
-							color: $body_font_color;
-						}
+						font-size: 20px;
+						font-weight: 100;
+						padding: 18px 26px;
+						color: $body_font_color;
 					}
-					li:hover {
-						background: $orange_hover;
-						a {
-							color: $white;
-						}
+				}
+				li:hover {
+					background: $orange_hover;
+					a {
+						color: $white;
 					}
 				}
 			}
 		}
 	}
+}
+
+hgroup#util_nav {
+	font-size: 14px;
+	height: 61px;
+	position: absolute;
+	right: 12px;
+	text-transform: uppercase;
+	top: 22px;
+	.sunday,
+	.wednesday {
+    	float: left;
+	}
+	.divide {
+		color: $divide;
+		float: left;
+    	margin: 0 13px;
+	}
+	.social {
+		float: left;
+		.follow {
+    		float: left;
+		}
+    	.text {
+	    	position: absolute;
+	    	left: -9999em;
+    	}
+    	.fb {
+	    	background: transparent url(assets/img/header-facebook-icon.png) no-repeat top center;
+	    	float: left;
+	    	height: 22px;
+	    	margin-left: 15px;
+	    	margin-top: -3px;
+	    	width: 12px;
+    	}
+    	.fb:hover {
+	    	background-image: url(assets/img/header-facebook-icon-hover.png);
+    	}
+    	.tw {
+	    	background: transparent url(assets/img/header-twitter-icon.png) no-repeat top center;
+	    	float: left;
+	    	height: 19px;
+	    	margin-left: 15px;
+	    	width: 23px;
+    	}
+    	.tw:hover {
+	    	background-image: url(assets/img/header-twitter-icon-hover.png);
+    	}
+	}
+}
+
+header {
+  	height: 316px;
+	.banner {
+		margin-top: 186px;
+	}
+	.feature {
+		position: relative;
+		top: 186px;
+		.breadcrumb {
+			background: none;
+			color: $white;
+			font-size: 14px;
+			margin: 0 0 0 0;
+			text-transform: uppercase;
+			padding: 20px 0;
+			.divide {
+				color: $divide;
+				padding: 0 10px;
+			}
+			a {
+				color: $footer_orange;	
+			}
+		}
+		.entry-title {
+			color: $white;
+			font-size: 42px;
+			font-weight: 100;
+			letter-spacing: 2px;
+			margin-top: 15px;
+			text-transform: uppercase;
+			a {
+				color: white;
+				font-weight: 100;
+			}
+			a:hover {
+				color: $footer_orange;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+.home header {
+  	height: 620px;
 	.banner {
 		margin-top: 186px;
 		aside.widget {
@@ -213,6 +264,7 @@ header {
 }
 
 #primary {
+	margin-top: 35px;
 	p {
 		line-height: 24px;
 		margin-bottom: 30px;
@@ -246,8 +298,38 @@ header {
 		}	
 	}
 	#sidebar {
+		.widget {
+			margin-bottom: 30px;
+			ul, li {
+				background: transparent;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			h3.widget-title {
+				background: $gray_bg;
+				margin-bottom: 0;
+				padding: 10px 21px 5px;
+				text-align: left;
+				text-transform: uppercase;
+			}
+			ul>li {
+				a {
+					border-bottom: 1px solid $gray_border;
+					display: block;
+					font-size: 20px;
+					padding: 19px 21px 15px;
+					text-decoration: none;
+				}
+			}
+			ul>li:hover {
+				background: $orange_hover;
+				a, a:hover {
+					color: $white;
+				}
+			}
+		}
 		.widget_recent_entries {
-			background: $white;
 			padding-bottom: 60px;
 			position: relative;
 			a.all-events {
@@ -261,13 +343,6 @@ header {
 			}
 			a.all-events:hover {
 				color: $orange_hover;
-			}
-			h3.widget-title {
-				background: $gray_bg;
-				color: $white;
-				padding: 10px 0px 5px;
-				text-align: center;
-				text-transform: uppercase;
 			}
 			ul {
 				list-style: none;

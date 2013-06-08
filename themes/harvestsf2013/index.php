@@ -15,40 +15,45 @@
 
 get_header(); ?>
 
+<?php get_template_part( 'include', 'feature' ); ?>
+
 </header>
-<div id="primary" class="site-content">
-    <div id="content" role="main">
-        <?php if ( have_posts() ) : ?>
+<div id="primary" class="site-content row-fluid">
+    <div id="content" class="span8" role="main">
+			
+		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			    
+			    <div class="entry-content span10">
 
-        <?php /* Start the Loop */ ?>
-        <?php while ( have_posts() ) : the_post(); ?>
+		            <?php get_template_part( 'content', get_post_format() ); ?>
+			        
+				    <div class="entry-meta">
+				        
+				        <span class='st_facebook_hcount' displayText='Facebook'></span>
+						<span class='st_twitter_hcount' displayText='Tweet'></span>
+						<span class='st_googleplus_hcount' displayText='Google +'></span>
+						<span class='st_email_hcount' displayText='Email'></span>
+				        
+				    </div><!-- .entry-meta -->
+				    
+			    </div><!-- .entry-content -->
+			    
+				<div class="clearboth"></div>
+			    
+			</article><!-- #post -->
 
-            <?php get_template_part( 'content', get_post_format() ); ?>
-
-            <?php endwhile; ?>
-
-        <?php else : ?>
-
-        <article id="post-0" class="post no-results not-found">
-
-            <header class="entry-header">
-                <h1 class="entry-title"><?php _e( 'Sometimes, not knowing where you\'re at can be a good thing.', 'harvestsf' ); ?></h1>
-            </header>
-
-            <div class="entry-content">
-
-                <?php get_template_part( 'content', '404' ); ?>
-
-                <?php get_search_form(); ?>
-
-            </div><!-- .entry-content -->
-
-        </article><!-- #post-0 -->
-
-        <?php endif; // end have_posts() check ?>
+			
+			<?php endwhile; ?>
+		<?php endif; ?>
+		<?php wp_reset_postdata(); /* Restore original Post Data */ ?>
 
     </div><!-- #content -->
+    <div id="sidebar" class="span4">
+	    <?php get_sidebar('int-events'); ?>
+    </div>
+    <div class="clearboth"></div>
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
