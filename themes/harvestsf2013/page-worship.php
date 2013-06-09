@@ -25,9 +25,9 @@ get_header(); ?>
 			
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			    
-			    <div class="entry-content span10">
+			    <div class="entry-content span12">
 
-		            <?php get_template_part( 'content', get_post_format() ); ?>
+		            <?php the_content(); ?>
 		            
 			    </div><!-- .entry-content -->
 			    
@@ -42,30 +42,36 @@ get_header(); ?>
 		<?php wp_reset_postdata(); /* Restore original Post Data */ ?>
 		
 		<div class="listing row-fluid">
-		
-			<?php 
-			
-			// only doing this stupid hack b/c post_type doesn't work when using new WP_Query in the loop...
-			
-			// global $wpdb;
-			// $pageQuery = "SELECT $wpdb->posts.* FROM $wpdb->posts WHERE post_parent = $post->ID AND post_type = 'page' AND post_status = 'publish'";
-			// $pages = $wpdb->get_results($pageQuery);
-			
-			?>
-		
-			<?php // foreach ( $pages as $key=>$page ) :  ?>
 			
 	    	<?php $children = new WP_Query( 'post_type=page&post_parent=9' ); ?>
+	    	
+			<?php $count = 0; ?>
 			
 			<?php if ( $children->have_posts() ) : while ( $children->have_posts() ) : $children->the_post(); ?>
+			
+				<?php $count += 1; if ($count&1) { $oddeven = 'odd'; } else { $oddeven = 'even'; } ?>
 				
-				<article id="post-<?php the_ID(); ?>" class="listings span5">
+				<article id="post-<?php the_ID(); ?>" class="listings span6 <?php echo $oddeven; ?>">
 				    
-				    <div class="entry-content span10">
+				    <div class="entry-content span12">
 				    
-				    	<?php echo get_the_post_thumbnail(); ?>
+				    	<div class="thumb">
+				    	
+				    		<h2><a href="<?php echo get_permalink(); ?>" title="<?php the_title(); ?>" class="thumb-title"><?php the_title(); ?></a></h2>
 				    
-				    	<?php the_excerpt(); ?>
+					    	<?php echo get_the_post_thumbnail(); ?>
+					    	
+					    	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb-border.png" alt="" class="border">
+				    	
+				    	</div>
+				    	
+				    	<div class="excerpt">
+				    
+					    	<?php echo substr(get_the_excerpt(), 0, 130); ?>
+				    	
+				    	</div>
+				    	
+				    	<a href="<?php echo get_permalink(); ?>" title="Read More >" class="readmore">Read More <img src="<?php echo get_template_directory_uri(); ?>/assets/img/orange-right-arrow.png" alt="" class="arrow"></a>
 			            
 				    </div><!-- .entry-content -->
 				    

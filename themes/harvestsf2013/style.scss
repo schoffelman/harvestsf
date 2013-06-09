@@ -280,6 +280,9 @@ header {
 	}
 	#content {
 		article {
+			p {
+				margin: 0 0 10px; // attempt to fix p tag settings above. may need to remove.
+			}
 		 	h1 {
 		 		background: transparent url(assets/img/double-quote.png) no-repeat 5px 0;
 		 		padding-left: 66px;
@@ -297,6 +300,52 @@ header {
 			 	padding: 10px 0 40px;
 		 	}
 		}	
+		.entry-content {
+			margin-bottom: 20px;
+			position: relative;
+		}		
+		.listing {
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			.entry-content {
+				border-bottom: 1px solid $gray_border;
+				height: 375px;
+			}
+			article.even {
+				margin: 0 0 0 0;
+			}
+			article.odd {
+				margin: 0 2.564102564102564% 0 0;
+			}
+			.thumb {
+				position: relative;
+				.border {
+					margin-top: -60px;
+				}
+				.thumb-title {
+					bottom: 18px;
+					color: $white;
+					font-weight: 100;
+					left: 20px;
+					position: absolute;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+			}
+			.readmore {
+				bottom: 10px;
+				padding: 0 20px 0 0;
+				position: absolute;
+				right: 0;
+				text-decoration: none;
+				text-transform: uppercase;
+				.arrow {
+					position: absolute;
+					right: 0;
+					top: 4px;
+				}
+			}
+		}
 	}
 	#sidebar {
 		.widget {

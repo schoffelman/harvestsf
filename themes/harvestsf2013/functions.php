@@ -73,3 +73,7 @@ function harvestsf_widgets_init() {
 
 
 add_action( 'widgets_init', 'harvestsf_widgets_init' );
+
+
+set_post_thumbnail_size( '300', '198' );
+

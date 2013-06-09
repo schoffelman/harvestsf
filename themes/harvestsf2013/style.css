@@ -209,6 +209,8 @@ header {
   #primary a:hover {
     color: #b23d29;
     text-decoration: underline; }
+  #primary #content article p {
+    margin: 0 0 10px; }
   #primary #content article h1 {
     background: transparent url(assets/img/double-quote.png) no-repeat 5px 0;
     padding-left: 66px;
@@ -221,6 +223,42 @@ header {
       text-decoration: none; }
   #primary #content article .entry-meta {
     padding: 10px 0 40px; }
+  #primary #content .entry-content {
+    margin-bottom: 20px;
+    position: relative; }
+  #primary #content .listing {
+    margin-bottom: 20px;
+    padding-bottom: 20px; }
+    #primary #content .listing .entry-content {
+      border-bottom: 1px solid #c8c8c8;
+      height: 375px; }
+    #primary #content .listing article.even {
+      margin: 0 0 0 0; }
+    #primary #content .listing article.odd {
+      margin: 0 2.5641% 0 0; }
+    #primary #content .listing .thumb {
+      position: relative; }
+      #primary #content .listing .thumb .border {
+        margin-top: -60px; }
+      #primary #content .listing .thumb .thumb-title {
+        bottom: 18px;
+        color: #f8f8f8;
+        font-weight: 100;
+        left: 20px;
+        position: absolute;
+        text-decoration: none;
+        text-transform: uppercase; }
+    #primary #content .listing .readmore {
+      bottom: 10px;
+      padding: 0 20px 0 0;
+      position: absolute;
+      right: 0;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #primary #content .listing .readmore .arrow {
+        position: absolute;
+        right: 0;
+        top: 4px; }
   #primary #sidebar .widget {
     margin-bottom: 30px; }
     #primary #sidebar .widget ul, #primary #sidebar .widget li {
