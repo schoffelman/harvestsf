@@ -72,6 +72,7 @@ nav#main_nav .menu-main-navigation-container {
   nav#main_nav .menu-main-navigation-container li:hover .sub-menu {
     background: #f8f8f8;
     display: block;
+    left: -25px;
     margin: 0;
     padding-top: 21px;
     position: absolute; }
