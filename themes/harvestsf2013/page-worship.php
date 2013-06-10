@@ -57,11 +57,9 @@ get_header(); ?>
 				    
 				    	<div class="thumb">
 				    	
-				    		<h2><a href="<?php echo get_permalink(); ?>" title="<?php the_title(); ?>" class="thumb-title"><?php the_title(); ?></a></h2>
+				    		<h2 class="thumb-title"><a href="<?php echo get_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 				    
 					    	<?php echo get_the_post_thumbnail(); ?>
-					    	
-					    	<img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb-border.png" alt="" class="border">
 				    	
 				    	</div>
 				    	

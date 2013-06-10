@@ -241,13 +241,21 @@ header {
       #primary #content .listing .thumb .border {
         margin-top: -60px; }
       #primary #content .listing .thumb .thumb-title {
-        bottom: 18px;
+        background: #006a6a;
+        bottom: -10px;
         color: #f8f8f8;
         font-weight: 100;
-        left: 20px;
+        left: 0;
+        padding: 14px 20px 10px;
         position: absolute;
         text-decoration: none;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        width: 260px; }
+        #primary #content .listing .thumb .thumb-title a {
+          color: #f8f8f8;
+          text-decoration: none; }
+        #primary #content .listing .thumb .thumb-title a:hover {
+          color: #f8f8f8; }
     #primary #content .listing .readmore {
       bottom: 10px;
       padding: 0 20px 0 0;

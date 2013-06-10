@@ -22,6 +22,7 @@ $divide: #808181;
 $footer_orange: #e99134;
 $gray_border: #c8c8c8;
 $gray_bg: #bebfbf;
+$teal: #006a6a;
 
 .left, .alignleft {
 	float: left;
@@ -323,13 +324,23 @@ header {
 					margin-top: -60px;
 				}
 				.thumb-title {
-					bottom: 18px;
+					background: $teal;
+					bottom: -10px;
 					color: $white;
 					font-weight: 100;
-					left: 20px;
+					left: 0;
+					padding: 14px 20px 10px;
 					position: absolute;
 					text-decoration: none;
 					text-transform: uppercase;
+					width: 260px;
+					a {
+						color: $white;
+						text-decoration: none;
+					}
+					a:hover {
+						color: $white;
+					}
 				}
 			}
 			.readmore {
