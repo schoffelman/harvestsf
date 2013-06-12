@@ -10,6 +10,7 @@ License URI:  http://opensource.org/licenses/MIT
 
 Have fun and give back to others.
 */
+/*** General Styles ***/
 .left, .alignleft {
   float: left;
   text-align: left; }
@@ -31,6 +32,121 @@ Have fun and give back to others.
 .clearboth {
   clear: both; }
 
+body h2,
+#primary h2 {
+  color: #2d2e2e;
+  font-size: 30px;
+  margin: 0.5em 0;
+  text-transform: uppercase; }
+  body h2 a,
+  #primary h2 a {
+    color: #2d2e2e;
+    text-decoration: none;
+    text-transform: uppercase; }
+  body h2 a:hover,
+  #primary h2 a:hover {
+    color: #b23d29; }
+body h3,
+#primary h3 {
+  color: #b23d29;
+  font-size: 24px;
+  margin: 0.5em 0;
+  text-transform: uppercase; }
+  body h3 a,
+  #primary h3 a {
+    color: #b23d29;
+    text-decoration: none;
+    text-transform: uppercase; }
+  body h3 a:hover,
+  #primary h3 a:hover {
+    color: #006a6a; }
+body h4,
+#primary h4 {
+  color: #2d2e2e;
+  font-size: 18px;
+  margin: 0.5em 0; }
+  body h4 a,
+  #primary h4 a {
+    color: #2d2e2e;
+    text-decoration: none; }
+  body h4 a:hover,
+  #primary h4 a:hover {
+    color: #b23d29; }
+body a,
+#primary a {
+  color: #b23d29;
+  text-decoration: underline; }
+body a:hover,
+#primary a:hover {
+  color: #006a6a;
+  text-decoration: underline; }
+body blockquote,
+#primary blockquote {
+  background: #efefef;
+  padding: 30px; }
+body ul,
+#primary ul {
+  font-size: 24px;
+  margin: 0;
+  padding: 0; }
+  body ul li,
+  #primary ul li {
+    list-style-image: url(assets/img/ul-bullet.png);
+    margin: 20px 0 0 40px; }
+body ol,
+#primary ol {
+  font-size: 24px;
+  margin: 0;
+  padding: 0; }
+  body ol li,
+  #primary ol li {
+    margin: 20px 0 0 30px;
+    list-style-position: outside; }
+body form,
+body input[type=text],
+body input[type=submit]:hover,
+body textarea,
+body label,
+#primary form,
+#primary input[type=text],
+#primary input[type=submit]:hover,
+#primary textarea,
+#primary label {
+  color: #2d2e2e;
+  font-family: ProximaNova-Light, Arial, sans-serif;
+  font-size: 16px; }
+body input[type=text],
+#primary input[type=text] {
+  border: 1px solid #c8c8c8;
+  padding: 10px;
+  width: 100%; }
+body input[type=radio],
+body input[type=checkbox],
+#primary input[type=radio],
+#primary input[type=checkbox] {
+  float: left;
+  margin-right: 10px; }
+body input[type=button],
+body input[type=submit],
+#primary input[type=button],
+#primary input[type=submit] {
+  background: #bebfbf;
+  border: none;
+  color: #f8f8f8;
+  padding: 20px 40px;
+  text-transform: uppercase; }
+body input[type=button]:hover,
+body input[type=submit]:hover,
+#primary input[type=button]:hover,
+#primary input[type=submit]:hover {
+  background: #e99134; }
+body textarea,
+#primary textarea {
+  border: 1px solid #c8c8c8;
+  padding: 10px;
+  width: 100%; }
+
+/*** Site Arrangement Styles ***/
 body {
   background: #e5e6e6 url(assets/img/background.jpg) top center repeat;
   color: #2d2e2e;
@@ -65,6 +181,7 @@ nav#main_nav .menu-main-navigation-container {
     color: #2d2e2e;
     font-family: ProximaNova-Light, Arial, sans-serif;
     font-size: 24px;
+    text-decoration: none;
     text-transform: uppercase; }
   nav#main_nav .menu-main-navigation-container a:hover {
     color: #b23d29;
@@ -148,7 +265,8 @@ header {
         color: #808181;
         padding: 0 10px; }
       header .feature .breadcrumb a {
-        color: #e99134; }
+        color: #e99134;
+        text-decoration: none; }
     header .feature .entry-title {
       color: #f8f8f8;
       font-size: 42px;
@@ -158,7 +276,8 @@ header {
       text-transform: uppercase; }
       header .feature .entry-title a {
         color: white;
-        font-weight: 100; }
+        font-weight: 100;
+        text-decoration: none; }
       header .feature .entry-title a:hover {
         color: #e99134;
         text-decoration: none; }
@@ -229,7 +348,7 @@ header {
       color: #b23d29;
       text-decoration: none; }
   #primary #content article .entry-meta {
-    padding: 10px 0 40px; }
+    padding: 10px 0 30px; }
   #primary #content article.page .entry-meta {
     float: right; }
   #primary #content .entry-content {

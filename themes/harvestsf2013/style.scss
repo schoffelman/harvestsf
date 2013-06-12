@@ -24,6 +24,10 @@ $gray_border: #c8c8c8;
 $gray_bg: #bebfbf;
 $teal: #006a6a;
 
+
+
+/*** General Styles ***/
+
 .left, .alignleft {
 	float: left;
 	text-align: left;
@@ -45,6 +49,128 @@ $teal: #006a6a;
 .clearboth {
 	clear: both;
 }
+
+body,
+#primary {
+    h2 {
+        color: $main_color;
+        font-size: 30px;
+        margin: .5em 0;
+        text-transform: uppercase;
+        a {
+            color: $main_color;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        a:hover {
+            color: $orange_hover;
+        }
+    }
+    h3 {
+        color: $orange_hover;
+        font-size: 24px;
+        margin: .5em 0;
+        text-transform: uppercase;
+        a {
+            color: $orange_hover;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        a:hover {
+            color: $teal;
+        }
+    }
+    h4 {
+        color: $main_color;
+        font-size: 18px;
+        margin: .5em 0;
+        a {
+            color: $main_color;
+            text-decoration: none;
+        }
+        a:hover {
+            color: $orange_hover;
+        }
+    }
+
+    a {
+        color: $orange_hover;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: $teal;
+        text-decoration: underline;
+    }
+
+    blockquote {
+        background: #efefef;
+        padding: 30px;
+    }
+    ul {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+        li {
+            list-style-image: url(assets/img/ul-bullet.png);
+            margin: 20px 0 0 40px;
+        }
+    }
+    ol {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 20px 0 0 30px;
+            list-style-position: outside;
+        }
+    }
+
+
+    form,
+    input[type=text],
+    input[type=submit]:hover,
+    textarea,
+    label {
+        color: $main_color;
+        font-family: ProximaNova-Light, Arial, sans-serif;
+        font-size: 16px;
+    }
+    form {
+    }
+    input[type=text] {
+        border: 1px solid $gray_border;
+        padding: 10px;
+        width: 100%;
+    }
+    input[type=radio],
+    input[type=checkbox] {
+        float: left;
+        margin-right: 10px;
+    }
+    input[type=button],
+    input[type=submit] {
+        background: $gray_bg;
+        border: none;
+        color: $white;
+        padding: 20px 40px;
+        text-transform: uppercase;
+    }
+    input[type=button]:hover,
+    input[type=submit]:hover {
+        background: $footer_orange;
+    }
+    textarea {
+        border: 1px solid $gray_border;
+        padding: 10px;
+        width: 100%;
+    }
+    label {
+    }
+
+
+}
+
+/*** Site Arrangement Styles ***/
 
 body {
 	background: $bg_color url(assets/img/background.jpg) top center repeat;
@@ -89,6 +215,7 @@ nav#main_nav {
 			color: $main_color;
 			font-family: ProximaNova-Light, Arial, sans-serif;
 			font-size: 24px;
+            text-decoration: none;
 			text-transform: uppercase;
 		}
 		a:hover {
@@ -195,7 +322,8 @@ header {
 				padding: 0 10px;
 			}
 			a {
-				color: $footer_orange;	
+				color: $footer_orange;
+                text-decoration: none;
 			}
 		}
 		.entry-title {
@@ -208,6 +336,7 @@ header {
 			a {
 				color: white;
 				font-weight: 100;
+                text-decoration: none;
 			}
 			a:hover {
 				color: $footer_orange;
@@ -319,7 +448,7 @@ header {
 			 	}
 		 	}
 		 	.entry-meta {
-			 	padding: 10px 0 40px;
+			 	padding: 10px 0 30px;
 		 	}
 		}
         article.page {
