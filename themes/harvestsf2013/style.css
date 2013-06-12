@@ -197,6 +197,13 @@ header {
         height: 600px;
         width: 620px;
         position: absolute; }
+.home #primary #sidebar aside.widget_recent_entries {
+  background: white; }
+  .home #primary #sidebar aside.widget_recent_entries .event li a {
+    border: none;
+    padding: 0 0; }
+  .home #primary #sidebar aside.widget_recent_entries li.crpw-item:hover {
+    background: white; }
 
 #primary {
   margin-top: 35px; }
