@@ -63,15 +63,8 @@ get_header(); ?>
 				    <div class="entry-content span10">
 				    
 				        <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'harvestsf' ) ); ?>
-				        
-					    <div class="entry-meta">
-					        
-					        <span class='st_facebook_hcount' displayText='Facebook'></span>
-							<span class='st_twitter_hcount' displayText='Tweet'></span>
-							<span class='st_googleplus_hcount' displayText='Google +'></span>
-							<span class='st_email_hcount' displayText='Email'></span>
-					        
-					    </div><!-- .entry-meta -->
+
+                        <?php get_template_part( 'include', 'entry-meta' ); ?>
 					    
 				    </div><!-- .entry-content -->
 				    

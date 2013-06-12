@@ -27,16 +27,9 @@ get_header(); ?>
 			    
 			    <div class="entry-content span10">
 
-		            <?php get_template_part( 'content', get_post_format() ); ?>
-			        
-				    <div class="entry-meta">
-				        
-				        <span class='st_facebook_hcount' displayText='Facebook'></span>
-						<span class='st_twitter_hcount' displayText='Tweet'></span>
-						<span class='st_googleplus_hcount' displayText='Google +'></span>
-						<span class='st_email_hcount' displayText='Email'></span>
-				        
-				    </div><!-- .entry-meta -->
+                    <?php get_template_part( 'content', get_post_format() ); ?>
+
+                    <?php get_template_part( 'include', 'entry-meta' ); ?>
 				    
 			    </div><!-- .entry-content -->
 			    

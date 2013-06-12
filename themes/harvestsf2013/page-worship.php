@@ -59,7 +59,7 @@ get_header(); ?>
 				    	
 				    		<h2 class="thumb-title"><a href="<?php echo get_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 				    
-					    	<?php echo get_the_post_thumbnail(); ?>
+					    	<?php if (has_post_thumbnail()) { echo get_the_post_thumbnail(); } ?>
 				    	
 				    	</div>
 				    	
@@ -84,6 +84,8 @@ get_header(); ?>
 			<?php wp_reset_postdata(); /* Restore original Post Data */ ?>
 		
 		</div>
+
+        <?php get_template_part( 'include', 'entry-meta' ); ?>
 
     </div><!-- #content -->
     <div id="sidebar" class="span4">

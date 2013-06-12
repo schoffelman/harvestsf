@@ -321,11 +321,28 @@ header {
 		 	.entry-meta {
 			 	padding: 10px 0 40px;
 		 	}
-		}	
+		}
+        article.page {
+            .entry-meta {
+                float: right;
+            }
+        }
 		.entry-content {
 			margin-bottom: 20px;
 			position: relative;
-		}		
+            .post-banner {
+                border-top-right-radius: 114px;
+                border-bottom-left-radius: 114px;
+                margin-bottom: 20px;
+                position: relative;
+                overflow: hidden;
+                .page-logo {
+                    bottom: 20px;
+                    position: absolute;
+                    right: 20px;
+                }
+            }
+		}
 		.listing {
 			margin-bottom: 20px;
 			padding-bottom: 20px;
