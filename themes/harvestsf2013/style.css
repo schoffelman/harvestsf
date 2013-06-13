@@ -155,21 +155,41 @@ body {
 .home #wrapper {
   background: transparent url(assets/img/header-background.png) repeat-x 50% 61px; }
 
-.page #wrapper {
-  background: transparent url(assets/img/int-bg-green.png) repeat-x 50% 61px; }
+.single #banner-wrapper,
+.category #banner-wrapper,
 .page #banner-wrapper {
   padding-top: 61px;
   position: absolute;
   width: 100%; }
+  .single #banner-wrapper .wrapper,
+  .category #banner-wrapper .wrapper,
   .page #banner-wrapper .wrapper {
     background: white;
     height: 0px;
     padding-top: 130px;
     width: 100%; }
-  .page #banner-wrapper .About .banner {
-    background: blue url(assets/img/int-bg-set.jpg) no-repeat bottom center;
+  .single #banner-wrapper .banner,
+  .category #banner-wrapper .banner,
+  .page #banner-wrapper .banner {
+    background: #334072 url(assets/img/int-bg-bass.jpg) no-repeat bottom center;
     height: 130px;
     width: 100%; }
+  .single #banner-wrapper .About,
+  .category #banner-wrapper .About,
+  .page #banner-wrapper .About {
+    background: #5e2b67 url(assets/img/int-bg-guitar.jpg) no-repeat bottom center; }
+  .single #banner-wrapper .Worship,
+  .category #banner-wrapper .Worship,
+  .page #banner-wrapper .Worship {
+    background: #006a6a url(assets/img/int-bg-set.jpg) no-repeat bottom center; }
+  .single #banner-wrapper .Contact,
+  .category #banner-wrapper .Contact,
+  .page #banner-wrapper .Contact {
+    background: #6f4b2a url(assets/img/int-bg-prayer.jpg) no-repeat bottom center; }
+  .single #banner-wrapper .Events,
+  .category #banner-wrapper .Events,
+  .page #banner-wrapper .Events {
+    background: #733126 url(assets/img/int-bg-drums.jpg) no-repeat bottom center; }
 
 .container {
   position: relative;
@@ -187,8 +207,9 @@ nav#main_nav .nav-menu > li {
   nav#main_nav .nav-menu > li .sub-menu {
     display: none; }
     nav#main_nav .nav-menu > li .sub-menu li {
+      background: #f8f8f8;
       list-style: none;
-      margin: 3px 0 0 0; }
+      margin: 0 0 0 0; }
 nav#main_nav .menu-main-navigation-container {
   position: absolute;
   top: 142px;
@@ -204,10 +225,9 @@ nav#main_nav .menu-main-navigation-container {
     color: #b23d29;
     text-decoration: none; }
   nav#main_nav .menu-main-navigation-container li:hover .sub-menu {
-    background: #f8f8f8;
     display: block;
     left: -25px;
-    margin: 0;
+    margin: 8px 0 0 0;
     padding-top: 21px;
     position: absolute; }
     nav#main_nav .menu-main-navigation-container li:hover .sub-menu li {
@@ -401,22 +421,23 @@ header {
     margin-bottom: 20px;
     padding-bottom: 20px; }
     #primary #content .listing .entry-content {
-      border-bottom: 1px solid #c8c8c8;
-      height: 375px; }
+      border-bottom: 1px solid #c8c8c8; }
     #primary #content .listing article.even {
       margin: 0 0 0 0; }
     #primary #content .listing article.odd {
       margin: 0 13px 0 0; }
     #primary #content .listing .thumb {
+      margin-bottom: 20px;
       position: relative; }
       #primary #content .listing .thumb .border {
         margin-top: -60px; }
       #primary #content .listing .thumb .thumb-title {
         background: #006a6a;
-        bottom: -10px;
+        bottom: 0px;
         color: #f8f8f8;
         font-weight: 100;
         left: 0;
+        margin: 0;
         padding: 14px 20px 10px;
         position: absolute;
         text-decoration: none;
@@ -427,6 +448,8 @@ header {
           text-decoration: none; }
         #primary #content .listing .thumb .thumb-title a:hover {
           color: #f8f8f8; }
+    #primary #content .listing .excerpt {
+      margin-bottom: 45px; }
     #primary #content .listing .readmore {
       bottom: 10px;
       padding: 0 20px 0 0;

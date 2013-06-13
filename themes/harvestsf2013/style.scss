@@ -182,10 +182,9 @@ body {
 	background: transparent url(assets/img/header-background.png) repeat-x 50% 61px;
 }
 
+.single,
+.category,
 .page {
-    #wrapper {
-        background: transparent url(assets/img/int-bg-green.png) repeat-x 50% 61px;
-    }
     #banner-wrapper {
         padding-top: 61px;
         position: absolute;
@@ -196,12 +195,22 @@ body {
             padding-top: 130px;
             width: 100%;
         }
+        .banner {
+            background: #334072 url(assets/img/int-bg-bass.jpg) no-repeat bottom center;
+            height: 130px;
+            width: 100%;
+        }
         .About {
-            .banner {
-                background: blue url(assets/img/int-bg-set.jpg) no-repeat bottom center;
-                height: 130px;
-                width: 100%;
-            }
+            background: #5e2b67 url(assets/img/int-bg-guitar.jpg) no-repeat bottom center;
+        }
+        .Worship {
+            background: #006a6a url(assets/img/int-bg-set.jpg) no-repeat bottom center;
+        }
+        .Contact {
+            background: #6f4b2a url(assets/img/int-bg-prayer.jpg) no-repeat bottom center;
+        }
+        .Events {
+            background: #733126 url(assets/img/int-bg-drums.jpg) no-repeat bottom center;
         }
     }
 }
@@ -226,8 +235,9 @@ nav#main_nav {
 		.sub-menu {
 			display: none;
             li {
+                background: $white;
                 list-style: none;
-                margin: 3px 0 0 0;
+                margin: 0 0 0 0;
             }
 		}
 	}
@@ -249,10 +259,9 @@ nav#main_nav {
 		}
 		li:hover {
 			.sub-menu {
-				background: $white;
 				display: block;
 				left: -25px;
-				margin: 0;
+				margin: 8px 0 0 0;
 				padding-top: 21px;
 				position: absolute;
 				li {
@@ -524,7 +533,6 @@ header {
 			padding-bottom: 20px;
 			.entry-content {
 				border-bottom: 1px solid $gray_border;
-				height: 375px;
 			}
 			article.even {
 				margin: 0 0 0 0;
@@ -533,16 +541,18 @@ header {
 				margin: 0 13px 0 0;
 			}
 			.thumb {
+                margin-bottom: 20px;
 				position: relative;
 				.border {
 					margin-top: -60px;
 				}
 				.thumb-title {
 					background: $teal;
-					bottom: -10px;
+					bottom: 0px;
 					color: $white;
 					font-weight: 100;
 					left: 0;
+                    margin: 0;
 					padding: 14px 20px 10px;
 					position: absolute;
 					text-decoration: none;
@@ -557,6 +567,9 @@ header {
 					}
 				}
 			}
+            .excerpt {
+                margin-bottom: 45px;
+            }
 			.readmore {
 				bottom: 10px;
 				padding: 0 20px 0 0;
