@@ -182,8 +182,28 @@ body {
 	background: transparent url(assets/img/header-background.png) repeat-x 50% 61px;
 }
 
-.page #wrapper {
-	background: transparent url(assets/img/int-bg-green.png) repeat-x 50% 61px;
+.page {
+    #wrapper {
+        background: transparent url(assets/img/int-bg-green.png) repeat-x 50% 61px;
+    }
+    #banner-wrapper {
+        padding-top: 61px;
+        position: absolute;
+        width: 100%;
+        .wrapper {
+            background: white;
+            height: 0px;
+            padding-top: 130px;
+            width: 100%;
+        }
+        .About {
+            .banner {
+                background: blue url(assets/img/int-bg-set.jpg) no-repeat bottom center;
+                height: 130px;
+                width: 100%;
+            }
+        }
+    }
 }
 
 .container {
