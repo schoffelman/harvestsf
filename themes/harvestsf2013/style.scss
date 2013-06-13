@@ -200,10 +200,15 @@ nav#main_nav {
 	}
 	.nav-menu>li {
 		float: left;
-		margin-left: 55px;
+        list-style: none;
+		margin: 0 0 0 55px;
 		position: relative;
 		.sub-menu {
 			display: none;
+            li {
+                list-style: none;
+                margin: 3px 0 0 0;
+            }
 		}
 	}
 	.menu-main-navigation-container {
@@ -385,6 +390,11 @@ header {
 			}
 			.slider-container {
 				margin-top: 20px;
+                #wpns_slider {
+                    border-bottom-left-radius: 305px;
+                    border-top-right-radius: 305px;
+                    overflow: hidden;
+                }
 				.slider-overlay {
 					background: transparent url(assets/img/slider-mask.png) no-repeat 0 0;
 					height: 600px;
@@ -429,6 +439,18 @@ header {
 		color: $orange_hover;
 		text-decoration: underline;
 	}
+    a.more-link {
+        background: transparent url(assets/img/orange-right-arrow.png) no-repeat 98% 45%;
+        float: right;
+        margin: 5px 0 0 0;
+        padding: 0 20px 0 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    a.more-link:hover {
+        color: $orange_hover;
+    }
 	#content {
 		article {
 			p {
@@ -447,6 +469,11 @@ header {
 				 	text-decoration: none;
 			 	}
 		 	}
+            .entry-content {
+                p {
+                    margin: 0 0 25px;
+                }
+            }
 		 	.entry-meta {
 			 	padding: 10px 0 30px;
 		 	}

@@ -168,10 +168,14 @@ nav#main_nav h2 {
   left: 12px; }
 nav#main_nav .nav-menu > li {
   float: left;
-  margin-left: 55px;
+  list-style: none;
+  margin: 0 0 0 55px;
   position: relative; }
   nav#main_nav .nav-menu > li .sub-menu {
     display: none; }
+    nav#main_nav .nav-menu > li .sub-menu li {
+      list-style: none;
+      margin: 3px 0 0 0; }
 nav#main_nav .menu-main-navigation-container {
   position: absolute;
   top: 142px;
@@ -311,6 +315,10 @@ header {
         text-decoration: none; }
     .home header .banner .slider-container {
       margin-top: 20px; }
+      .home header .banner .slider-container #wpns_slider {
+        border-bottom-left-radius: 305px;
+        border-top-right-radius: 305px;
+        overflow: hidden; }
       .home header .banner .slider-container .slider-overlay {
         background: transparent url(assets/img/slider-mask.png) no-repeat 0 0;
         height: 600px;
@@ -335,6 +343,16 @@ header {
   #primary a:hover {
     color: #b23d29;
     text-decoration: underline; }
+  #primary a.more-link {
+    background: transparent url(assets/img/orange-right-arrow.png) no-repeat 98% 45%;
+    float: right;
+    margin: 5px 0 0 0;
+    padding: 0 20px 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap; }
+  #primary a.more-link:hover {
+    color: #b23d29; }
   #primary #content article p {
     margin: 0 0 10px; }
   #primary #content article h1 {
@@ -347,6 +365,8 @@ header {
     #primary #content article h1 a:hover {
       color: #b23d29;
       text-decoration: none; }
+  #primary #content article .entry-content p {
+    margin: 0 0 25px; }
   #primary #content article .entry-meta {
     padding: 10px 0 30px; }
   #primary #content article.page .entry-meta {
