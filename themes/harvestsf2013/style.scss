@@ -136,11 +136,19 @@ body,
         font-size: 16px;
     }
     form {
+        ol {
+            list-style: none;
+            margin: 0;
+            li {
+                margin: 0;
+                position: relative;
+            }
+        }
     }
     input[type=text] {
         border: 1px solid $gray_border;
         padding: 10px;
-        width: 100%;
+        width: 90%;
     }
     input[type=radio],
     input[type=checkbox] {
@@ -162,12 +170,22 @@ body,
     textarea {
         border: 1px solid $gray_border;
         padding: 10px;
-        width: 100%;
+        width: 90%;
     }
     label {
     }
-
-
+    .linklove {
+        left: -9999em;
+        position: absolute;
+    }
+    .reqtxt,
+    .emailreqtxt {
+        color: $orange_hover;
+        font-size: 12px;
+        position: absolute;
+        right: 10%;
+        top: 0;
+    }
 }
 
 /*** Site Arrangement Styles ***/

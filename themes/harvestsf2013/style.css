@@ -115,11 +115,19 @@ body label,
   color: #2d2e2e;
   font-family: ProximaNova-Light, Arial, sans-serif;
   font-size: 16px; }
+body form ol,
+#primary form ol {
+  list-style: none;
+  margin: 0; }
+  body form ol li,
+  #primary form ol li {
+    margin: 0;
+    position: relative; }
 body input[type=text],
 #primary input[type=text] {
   border: 1px solid #c8c8c8;
   padding: 10px;
-  width: 100%; }
+  width: 90%; }
 body input[type=radio],
 body input[type=checkbox],
 #primary input[type=radio],
@@ -144,7 +152,20 @@ body textarea,
 #primary textarea {
   border: 1px solid #c8c8c8;
   padding: 10px;
-  width: 100%; }
+  width: 90%; }
+body .linklove,
+#primary .linklove {
+  left: -9999em;
+  position: absolute; }
+body .reqtxt,
+body .emailreqtxt,
+#primary .reqtxt,
+#primary .emailreqtxt {
+  color: #b23d29;
+  font-size: 12px;
+  position: absolute;
+  right: 10%;
+  top: 0; }
 
 /*** Site Arrangement Styles ***/
 body {
