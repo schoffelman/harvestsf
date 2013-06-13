@@ -62,7 +62,9 @@ get_header(); ?>
 				    
 				    <div class="entry-content span10">
 				    
-				        <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'harvestsf' ) ); ?>
+				        <?php the_content( __( 'Read More', 'harvestsf' ) ); ?>
+
+                        <div class="clearboth"></div>
 
                         <?php get_template_part( 'include', 'entry-meta' ); ?>
 					    
