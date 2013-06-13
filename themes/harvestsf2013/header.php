@@ -42,8 +42,8 @@
 <body <?php body_class(); ?>>
 <div id="wrapper">
     <div id="banner-wrapper">
-        <div class="wrapper <?php echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent ); ?>">
-            <div class="banner"></div>
+        <div class="wrapper">
+            <div class="banner <?php echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent ); ?>"></div>
         </div>
     </div>
     <div class="container">
