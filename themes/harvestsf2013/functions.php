@@ -76,5 +76,6 @@ add_action( 'widgets_init', 'harvestsf_widgets_init' );
 
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( '300', '198' );
+add_image_size( 'slider', '620', '600' );
 add_image_size( 'full-view', '620', '400' );
 
