@@ -355,6 +355,15 @@ hgroup#util_nav {
 }
 
 header {
+    nav#main_nav {
+	    .menu-main-navigation-container {
+    		li:hover {
+    			.sub-menu {
+        			margin-top: 3px;
+    			}
+            }	
+	    }
+    }
   	height: 316px;
 	.banner {
 		margin-top: 186px;
@@ -402,6 +411,7 @@ header {
 .home {
 	header {
 		height: 620px;
+		
 		.banner {
 			margin-top: 186px;
 			aside.widget {

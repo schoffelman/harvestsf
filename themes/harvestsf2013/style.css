@@ -307,6 +307,8 @@ hgroup#util_nav {
 
 header {
   height: 316px; }
+  header nav#main_nav .menu-main-navigation-container li:hover .sub-menu {
+    margin-top: 3px; }
   header .banner {
     margin-top: 186px; }
   header .feature {
