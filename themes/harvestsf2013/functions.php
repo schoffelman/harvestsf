@@ -15,9 +15,9 @@ function harvestsf_widgets_init() {
         'id' => 'overview-sidebar',
         'description' => __( 'Appears on the homepage banner section', 'harvestsf' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'after_widget' => '</div></aside>',
         'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
+        'after_title' => '</h3><div class="visible-desktop">',
     ) );
     
     register_sidebar( array(

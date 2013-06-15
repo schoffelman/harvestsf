@@ -356,7 +356,7 @@ hgroup#util_nav {
 }
 
 header {
-  	height: 316px;
+  	height: 321px;
 	.banner {
 		margin-top: 186px;
 	}
@@ -859,3 +859,174 @@ header {
 		}
 	}
 }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 980px) { 
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    .home {
+        #wrapper {
+    	    background: transparent url(assets/img/header-background-580.png) repeat-x 50% 61px;
+        }
+        header {
+            height: 480px;
+            .banner {
+                aside.widget {
+                    height: 114px;
+                    margin-top: 18px;
+                    padding-top: 18px;
+                }
+                .slider-container {
+                    .slider-wrapper {
+                        height: 459px;
+                        width: 474px;
+                    }
+                    #wpns_slider {
+                        border-bottom-left-radius: 238px;
+                        border-top-right-radius: 238px;
+                        height: 459px;
+                        width: 474px;
+                        .nivo-directionNav a {
+                            top: 165px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    header {
+        nav#main_nav {
+            h2 {
+                top: 56px;
+                img {
+                    width: 75%;
+                }
+            }
+            .menu-main-navigation-container a {
+                padding-bottom: 22px;
+            }
+            .nav-menu > li {
+                margin: 0 0 0 40px;
+            }
+            .nav-menu {
+                .menu-item-2164 {
+                    .sub-menu > li {
+                        margin: 0 0 0 -96px;
+                        text-align: right;
+                    }
+                }
+                .menu-item-1867 {
+                    .sub-menu > li {
+                        margin: 0 0 0 -86px;
+                        text-align: right;
+                    }
+                }
+                .menu-item-1909 {
+                    .sub-menu > li {
+                        margin: 0 0 0 -58px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    #primary {
+        #content {
+            article {
+                h1 {
+                    background-position-x: 0;
+                    padding-left: 53px;
+                }
+            }
+        }
+        #sidebar {
+            .widget_recent_entries {
+                ul {
+                    li.crpw-item {
+                        width: 228px;
+                        .crpw-date {
+                            margin-left: 20px;
+                            margin-top: 10px;
+                        }
+                        .event { 
+                            width: 108px;
+                        }
+                    }
+                }
+            } 
+        }
+    } 
+    #footer-body {
+        .container {
+            footer {
+                .span8 {
+                    h2 {
+                        font-size: 22px;
+                        line-height: 55px;
+                    }
+                    #map {
+                        height: 179px !important;
+                    }
+                }
+                .span4 {
+                    h2 {
+                        font-size: 22px;
+                        line-height: 45px;
+                        .fb {
+                            margin-left: 15px;
+                        }
+                    }
+                    .insta {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .home {
+        #wrapper {
+    	    background: transparent url(assets/img/header-background-580.png) repeat-x 50% 61px;
+        }
+        header {
+            .banner {
+                aside.widget {
+                    height: 114px;
+                    margin-top: 18px;
+                    padding-top: 18px;
+                }
+            }
+        }
+    }
+    header {
+        border: 1px solid red;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .home {
+        #wrapper {
+    	    background: transparent url(assets/img/header-background-580.png) repeat-x 50% 61px;
+        }
+        header {
+            .banner {
+                aside.widget {
+                    height: 114px;
+                    margin-top: 18px;
+                    padding-top: 18px;
+                }
+            }
+        }
+    }
+    header {
+        border: 1px solid blue;
+    }
+}
+
+

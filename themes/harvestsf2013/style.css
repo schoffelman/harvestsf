@@ -307,7 +307,7 @@ hgroup#util_nav {
       background-image: url(assets/img/header-twitter-icon-hover.png); }
 
 header {
-  height: 316px; }
+  height: 321px; }
   header .banner {
     margin-top: 186px; }
   header .feature {
@@ -665,3 +665,89 @@ header {
         width: 250px; }
     #footer-body .container footer .span4 .insta:hover {
       background: #e99134; }
+
+/* Portrait tablet to landscape and desktop */
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .home #wrapper {
+    background: transparent url(assets/img/header-background-580.png) repeat-x 50% 61px; }
+  .home header {
+    height: 480px; }
+    .home header .banner aside.widget {
+      height: 114px;
+      margin-top: 18px;
+      padding-top: 18px; }
+    .home header .banner .slider-container .slider-wrapper {
+      height: 459px;
+      width: 474px; }
+    .home header .banner .slider-container #wpns_slider {
+      border-bottom-left-radius: 238px;
+      border-top-right-radius: 238px;
+      height: 459px;
+      width: 474px; }
+      .home header .banner .slider-container #wpns_slider .nivo-directionNav a {
+        top: 165px; }
+
+  header nav#main_nav h2 {
+    top: 56px; }
+    header nav#main_nav h2 img {
+      width: 75%; }
+  header nav#main_nav .menu-main-navigation-container a {
+    padding-bottom: 22px; }
+  header nav#main_nav .nav-menu > li {
+    margin: 0 0 0 40px; }
+  header nav#main_nav .nav-menu .menu-item-2164 .sub-menu > li {
+    margin: 0 0 0 -96px;
+    text-align: right; }
+  header nav#main_nav .nav-menu .menu-item-1867 .sub-menu > li {
+    margin: 0 0 0 -86px;
+    text-align: right; }
+  header nav#main_nav .nav-menu .menu-item-1909 .sub-menu > li {
+    margin: 0 0 0 -58px;
+    text-align: right; }
+
+  #primary #content article h1 {
+    background-position-x: 0;
+    padding-left: 53px; }
+  #primary #sidebar .widget_recent_entries ul li.crpw-item {
+    width: 228px; }
+    #primary #sidebar .widget_recent_entries ul li.crpw-item .crpw-date {
+      margin-left: 20px;
+      margin-top: 10px; }
+    #primary #sidebar .widget_recent_entries ul li.crpw-item .event {
+      width: 108px; }
+
+  #footer-body .container footer .span8 h2 {
+    font-size: 22px;
+    line-height: 55px; }
+  #footer-body .container footer .span8 #map {
+    height: 179px !important; }
+  #footer-body .container footer .span4 h2 {
+    font-size: 22px;
+    line-height: 45px; }
+    #footer-body .container footer .span4 h2 .fb {
+      margin-left: 15px; }
+  #footer-body .container footer .span4 .insta {
+    width: 220px; } }
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .home #wrapper {
+    background: transparent url(assets/img/header-background-580.png) repeat-x 50% 61px; }
+  .home header .banner aside.widget {
+    height: 114px;
+    margin-top: 18px;
+    padding-top: 18px; }
+
+  header {
+    border: 1px solid red; } }
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .home #wrapper {
+    background: transparent url(assets/img/header-background-580.png) repeat-x 50% 61px; }
+  .home header .banner aside.widget {
+    height: 114px;
+    margin-top: 18px;
+    padding-top: 18px; }
+
+  header {
+    border: 1px solid blue; } }
