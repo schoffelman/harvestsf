@@ -226,7 +226,8 @@ nav#main_nav .nav-menu > li {
   margin: 0 0 0 55px;
   position: relative; }
   nav#main_nav .nav-menu > li .sub-menu {
-    display: none; }
+    display: none;
+    margin-top: 5px; }
     nav#main_nav .nav-menu > li .sub-menu li {
       background: #f8f8f8;
       list-style: none;
@@ -307,8 +308,6 @@ hgroup#util_nav {
 
 header {
   height: 316px; }
-  header nav#main_nav .menu-main-navigation-container li:hover .sub-menu {
-    margin-top: 3px; }
   header .banner {
     margin-top: 186px; }
   header .feature {
@@ -344,6 +343,8 @@ header {
 
 .home header {
   height: 620px; }
+  .home header nav#main_nav .menu-main-navigation-container li:hover .sub-menu {
+    margin-top: 3px; }
   .home header .banner {
     margin-top: 186px; }
     .home header .banner aside.widget {
