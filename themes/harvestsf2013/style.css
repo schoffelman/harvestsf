@@ -792,7 +792,10 @@ header {
       #wrapper header .feature {
         top: 64px; }
         #wrapper header .feature .breadcrumb {
+          font-size: 12px;
           padding: 10px 0 0; }
+        #wrapper header .feature h1.entry-title {
+          font-size: 28px; }
     #wrapper #main_nav h2 {
       left: 0;
       margin: 8px 0;
@@ -948,7 +951,11 @@ header {
       #wrapper header .feature {
         top: 64px; }
         #wrapper header .feature .breadcrumb {
+          font-size: 12px;
           padding: 10px 0 0; }
+        #wrapper header .feature h1.entry-title {
+          font-size: 28px;
+          line-height: 28px; }
     #wrapper #main_nav h2 {
       left: 0;
       margin: 8px 0;

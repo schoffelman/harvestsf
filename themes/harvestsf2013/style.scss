@@ -1059,7 +1059,11 @@ header {
             .feature {
                 top: 64px;
                 .breadcrumb {
+                    font-size: 12px;
                     padding: 10px 0 0;
+                }
+                h1.entry-title {
+                    font-size: 28px;
                 }
             }
         }
@@ -1293,7 +1297,12 @@ header {
             .feature {
                 top: 64px;
                 .breadcrumb {
+                    font-size: 12px;
                     padding: 10px 0 0;
+                }
+                h1.entry-title {
+                    font-size: 28px;
+                    line-height: 28px;
                 }
             }
         }
