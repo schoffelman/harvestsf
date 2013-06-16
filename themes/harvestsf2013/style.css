@@ -906,8 +906,9 @@ header {
         height: 30px;
         margin-top: 0px;
         padding: 18px 0 0 40px; }
-        .home header .banner aside.widget h3 {
-          font-size: 22px; }
+        .home header .banner aside.widget h3.widget-title {
+          font-size: 16px;
+          line-height: 24px; }
       .home header .banner aside.widget:hover {
         background-position: 0px 15px;
         height: 30px;
