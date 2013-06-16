@@ -46,21 +46,36 @@ class Custom_Recent_Posts_Widget extends WP_Widget {
 		while ( $crp_widget->have_posts() )
 		{
 			$crp_widget->the_post();
+            $event_day = get_post_meta(get_the_ID(), 'event_day', true);
+            $event_month = get_post_meta(get_the_ID(), 'event_month', true);
+            $event_time = get_post_meta(get_the_ID(), 'event_time', true);
 		?>
 			<li class="crpw-item">
-				
-				<?php if ( $show_date ) : ?>
-					<div class="crpw-date">
-						<div class="month"><?php echo get_the_date('M'); ?></div>
-						<div class="day"><?php echo get_the_date('d'); ?></div>
-					</div>
-				<?php endif; ?>
+
+				<?php
+                    if ( $show_date ) :
+                        if (!empty($event_day) && !empty($event_month) && !empty($event_time)) {
+                            $day = $event_day;
+                            $month = substr($event_month, 0, 3);
+                            $time = $event_time;
+                        } else {
+                            $day = get_the_date('d');
+                            $month = get_the_date('M');
+                            $time = get_the_time();
+                        }
+                    endif;
+                ?>
+
+                <div class="crpw-date">
+                    <div class="month"><?php echo $month; ?></div>
+                    <div class="day"><?php echo $day; ?></div>
+                </div>
 				
 				<div class="event">
 					
 					<ul>
 						<li class="title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent link to <?php the_title_attribute(); ?>" class="crpw-title"><?php the_title(); ?></a></li>
-						<li class="time"><?php echo get_the_time(); ?></li>
+						<li class="time"><?php echo $time; ?></li>
 					</ul>
 					
 				</div>
