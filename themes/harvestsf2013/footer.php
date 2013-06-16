@@ -5,9 +5,9 @@
 		<div id="footer-body">
 			<div class="container">
 				<div class="tab">
-					<div class="sunday">Sunday Worship @ 10:30AM</div>
+					<div class="sunday">Sunday <span class="hidden-phone">Worship </span>@ 10:30AM</div>
 					<div class="divide">//</div>
-					<div class="wednesday">Wednesday Youth @ 7PM</div>
+					<div class="wednesday">Wednesday <span class="hidden-phone">Youth </span>@ 7PM</div>
 				</div><!-- .tab -->
 				<footer class="row-fluid">
 				    <div class="span8">
@@ -15,8 +15,10 @@
 				    	<address>
 				    		<h4>309 S Bahnson Ave Sioux Falls, SD 57103</h4>
 				    		<h4>PH <span>605.335.5800<span></h4>
-							<div id="map" style="height: 215px;"></div>
 				    	</address>
+                        <div id="map-container">
+                            <div id="map"></div>
+                        </div>
 			    		<script type="text/javascript">
 				    			var styles = [
 									{

@@ -232,39 +232,39 @@ nav#main_nav .nav-menu > li {
       background: #f8f8f8;
       list-style: none;
       margin: 0 0 0 0; }
-nav#main_nav .menu-main-navigation-container {
+nav#main_nav .nav-menu {
   position: absolute;
   top: 142px;
   right: 12px;
   z-index: 9999; }
-  nav#main_nav .menu-main-navigation-container a {
+  nav#main_nav .nav-menu a {
     color: #2d2e2e;
     font-family: ProximaNova-Light, Arial, sans-serif;
     font-size: 24px;
     text-decoration: none;
     text-transform: uppercase; }
-  nav#main_nav .menu-main-navigation-container a:hover {
+  nav#main_nav .nav-menu a:hover {
     color: #b23d29;
     text-decoration: none; }
-  nav#main_nav .menu-main-navigation-container li:hover .sub-menu {
+  nav#main_nav .nav-menu li:hover .sub-menu {
     display: block;
     left: -25px;
     margin: 8px 0 0 0;
     padding-top: 21px;
     position: absolute; }
-    nav#main_nav .menu-main-navigation-container li:hover .sub-menu li {
+    nav#main_nav .nav-menu li:hover .sub-menu li {
       border-top: 1px solid #c8c8c8;
       display: block;
       white-space: nowrap; }
-      nav#main_nav .menu-main-navigation-container li:hover .sub-menu li a {
+      nav#main_nav .nav-menu li:hover .sub-menu li a {
         display: block;
         font-size: 20px;
         font-weight: 100;
         padding: 18px 26px;
         color: #535454; }
-    nav#main_nav .menu-main-navigation-container li:hover .sub-menu li:hover {
+    nav#main_nav .nav-menu li:hover .sub-menu li:hover {
       background: #b23d29; }
-      nav#main_nav .menu-main-navigation-container li:hover .sub-menu li:hover a {
+      nav#main_nav .nav-menu li:hover .sub-menu li:hover a {
         color: #f8f8f8; }
 
 hgroup#util_nav {
@@ -343,7 +343,7 @@ header {
 
 .home header {
   height: 620px; }
-  .home header nav#main_nav .menu-main-navigation-container li:hover .sub-menu {
+  .home header nav#main_nav .nav-menu li:hover .sub-menu {
     margin-top: 3px; }
   .home header .banner {
     margin-top: 186px; }
@@ -623,6 +623,10 @@ header {
             color: #f8f8f8; }
       #footer-body .container footer .span8 address:hover h4 span {
         color: #e99134; }
+      #footer-body .container footer .span8 #map-container {
+        margin-left: 70px; }
+        #footer-body .container footer .span8 #map-container #map {
+          height: 211px; }
     #footer-body .container footer .span4 {
       margin-top: 70px; }
       #footer-body .container footer .span4 h2 {
@@ -667,7 +671,6 @@ header {
       background: #e99134; }
 
 /* Portrait tablet to landscape and desktop */
-/* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
   .home #wrapper {
     background: transparent url(assets/img/header-background-580.png) repeat-x 50% 61px; }
@@ -692,11 +695,12 @@ header {
     top: 56px; }
     header nav#main_nav h2 img {
       width: 75%; }
-  header nav#main_nav .menu-main-navigation-container a {
+  header nav#main_nav .nav-menu a {
     padding-bottom: 22px; }
   header nav#main_nav .nav-menu > li {
     margin: 0 0 0 40px; }
-  header nav#main_nav .nav-menu .menu-item-2164 .sub-menu > li {
+  header nav#main_nav .nav-menu .menu-item-2164 .sub-menu > li,
+  header nav#main_nav .nav-menu .menu-item-2166 .sub-menu > li {
     margin: 0 0 0 -96px;
     text-align: right; }
   header nav#main_nav .nav-menu .menu-item-1867 .sub-menu > li {
@@ -720,8 +724,10 @@ header {
   #footer-body .container footer .span8 h2 {
     font-size: 22px;
     line-height: 55px; }
-  #footer-body .container footer .span8 #map {
-    height: 179px !important; }
+  #footer-body .container footer .span8 #map-container {
+    margin-left: 70px; }
+    #footer-body .container footer .span8 #map-container #map {
+      height: 168px !important; }
   #footer-body .container footer .span4 h2 {
     font-size: 22px;
     line-height: 45px; }
@@ -730,20 +736,133 @@ header {
   #footer-body .container footer .span4 .insta {
     width: 220px; } }
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
-  .home #wrapper {
-    background: transparent url(assets/img/header-background-580.png) repeat-x 50% 61px; }
-  .home header .banner aside.widget {
-    height: 114px;
-    margin-top: 18px;
-    padding-top: 18px; }
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+    padding: 0 0; }
 
-  header {
-    border: 1px solid red; } }
+  #mobile-main-nav-button {
+    display: none !important;
+    position: absolute;
+    right: 20px;
+    top: 0; }
+
+  #mobile-main-nav {
+    display: none !important;
+    background: #f8f8f8;
+    box-shadow: 5px 0px 35px black;
+    display: none;
+    left: 20px;
+    position: absolute;
+    top: 0; }
+    #mobile-main-nav li {
+      list-style: none;
+      margin: 5px 10px 0 10px; }
+      #mobile-main-nav li a {
+        color: #535454;
+        font-size: 16px; }
+
+  #wrapper {
+    padding: 0 20px; }
+    #wrapper #main_nav h2 {
+      left: 0;
+      margin: 8px 0;
+      top: 0; }
+      #wrapper #main_nav h2 img {
+        width: 185px; }
+
+  .home #wrapper {
+    background: transparent url(assets/img/header-background-mobile.png) repeat-x 50% 0px; }
+  .home header {
+    height: 400px; }
+    .home header .banner {
+      margin-top: 62px; }
+      .home header .banner aside.widget {
+        background-position: 0px 15px;
+        height: 30px;
+        margin-top: 0px;
+        padding: 18px 0 0 40px; }
+        .home header .banner aside.widget h3 {
+          font-size: 22px; }
+      .home header .banner aside.widget:hover {
+        background-position: 0px 15px;
+        height: 30px;
+        margin-top: 0px;
+        padding: 18px 0 0 40px; }
+      .home header .banner .slider-container .slider-wrapper {
+        height: 259px;
+        width: 242px; }
+      .home header .banner .slider-container #wpns_slider {
+        border-bottom-left-radius: 120px;
+        border-top-right-radius: 120px;
+        height: 235px;
+        width: 242px; }
+        .home header .banner .slider-container #wpns_slider .nivo-directionNav a {
+          top: 165px; }
+  .home .span1 {
+    display: none; }
+
+  #primary .more-link {
+    display: none; }
+  #primary .mobile-read-more {
+    display: block;
+    height: 120px;
+    margin: -130px 0 10px 0;
+    position: relative;
+    text-align: center;
+    z-index: 10000;
+    /* webkit */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 230, 230, 0.3)), to(#e5e6e6), color-stop(65%, #e5e6e6));
+    /* FF */
+    background-image: -moz-linear-gradient(rgba(229, 230, 230, 0.3) 0%, #e5e6e6 65%);
+    /* >IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6             );
+    /* =IE8 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6             ); }
+    #primary .mobile-read-more a {
+      display: block; }
+    #primary .mobile-read-more img {
+      margin-top: 50px; }
+  #primary #content article h1 {
+    background: transparent url(assets/img/mobile-quote.png) no-repeat 0 0;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 30px; }
+  #primary #sidebar aside {
+    width: 300px; }
+
+  #footer-body .container .tab {
+    background-position: top right;
+    width: 70%; }
+  #footer-body .container footer .span8 h2 {
+    font-size: 22px;
+    line-height: 55px; }
+  #footer-body .container footer .span8 #map-container {
+    margin-left: 70px; }
+    #footer-body .container footer .span8 #map-container #map {
+      height: 168px !important;
+      width: 90% !important; }
+  #footer-body .container footer .span4 h2 {
+    font-size: 22px;
+    line-height: 45px;
+    margin-left: 70px; }
+    #footer-body .container footer .span4 h2 .fb {
+      margin-left: 15px; }
+  #footer-body .container footer .span4 .insta {
+    margin-left: 70px;
+    width: 220px; } }
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  body {
+    padding: 0 0; }
+
+  #wrapper {
+    padding: 0 20px; }
+    #wrapper h2 {
+      left: 0;
+      top: 0; }
+
   .home #wrapper {
-    background: transparent url(assets/img/header-background-580.png) repeat-x 50% 61px; }
+    background: transparent url(assets/img/header-background-mobile.png) repeat-x 50% 0px; }
   .home header .banner aside.widget {
     height: 114px;
     margin-top: 18px;

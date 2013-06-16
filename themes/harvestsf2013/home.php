@@ -64,6 +64,12 @@ get_header(); ?>
 				    
 				        <?php the_content( __( 'Read More', 'harvestsf' ) ); ?>
 
+                        <div class="visible-phone mobile-read-more">
+                            <a href="<?php the_permalink(); ?>" title="Read More">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-more-button.png" alt="Mobile More Button">
+                            </a>
+                        </div>
+
                         <div class="clearboth"></div>
 
                         <?php get_template_part( 'include', 'entry-meta' ); ?>
