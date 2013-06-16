@@ -64,8 +64,12 @@ get_header(); ?>
 				    	</div>
 				    	
 				    	<div class="excerpt">
-				    
-					    	<?php echo substr(get_the_excerpt(), 0, 130); ?>
+
+                            <?php
+                                global $more;
+                                $more = 0;
+                                the_content('');
+                            ?>
 				    	
 				    	</div>
 				    	
