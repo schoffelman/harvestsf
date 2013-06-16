@@ -59,7 +59,7 @@ get_header(); ?>
 				    	
 				    		<h2 class="thumb-title"><a href="<?php echo get_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 				    
-					    	<?php if (has_post_thumbnail()) { echo get_the_post_thumbnail(); } ?>
+					    	<?php if (has_post_thumbnail()) { echo the_post_thumbnail('full-view'); } ?>
 				    	
 				    	</div>
 				    	

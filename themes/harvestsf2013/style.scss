@@ -437,7 +437,7 @@ header {
 				}
 			}
 			aside.widget:hover {
-				background: transparent url(assets/img/orange-arrow.png?) no-repeat 20px 18px;
+				background: transparent url(assets/img/orange-arrow.png) no-repeat 20px 18px;
 				cursor: hand;
 				h3.widget-title {
 					a {
@@ -547,6 +547,7 @@ header {
                 border-top-right-radius: 114px;
                 border-bottom-left-radius: 114px;
                 margin-bottom: 20px;
+                max-width: 620px;
                 position: relative;
                 overflow: hidden;
                 .page-logo {
@@ -570,6 +571,7 @@ header {
 			}
 			.thumb {
                 margin-bottom: 20px;
+                overflow: hidden;
 				position: relative;
 				.border {
 					margin-top: -60px;
@@ -585,7 +587,7 @@ header {
 					position: absolute;
 					text-decoration: none;
 					text-transform: uppercase;
-					width: 260px;
+					width: 100%;
 					a {
 						color: $white;
 						text-decoration: none;
@@ -625,6 +627,7 @@ header {
 			h3.widget-title {
 				background: $gray_bg;
 				margin-bottom: 0;
+                margin-top: 0;
 				padding: 10px 21px 5px;
 				text-align: left;
 				text-transform: uppercase;
@@ -1023,6 +1026,43 @@ header {
     }
     #wrapper {
         padding: 0 20px;
+        #banner-wrapper {
+            margin-left: -20px;
+            padding-top: 0;
+            .wrapper {
+                padding-top: 62px;
+            }
+            .banner {
+                background: #334072;
+                background-image: none;
+                height: 100px;
+            }
+            .About {
+                background: #5e2b67;
+                background-image: none;
+            }
+            .Worship {
+                background: #006a6a;
+                background-image: none;
+            }
+            .Contact {
+                background: #6f4b2a;
+                background-image: none;
+            }
+            .Events {
+                background: #733126;
+                background-image: none;
+            }
+        }
+        header {
+            height: 162px;
+            .feature {
+                top: 64px;
+                .breadcrumb {
+                    padding: 10px 0 0;
+                }
+            }
+        }
         #main_nav {
             h2 {
                 left:0;
@@ -1126,6 +1166,12 @@ header {
                     padding-left: 30px;
                 }
             }
+            .listing {
+                max-width: 580px;
+                .thumb {
+                    overflow: hidden;
+                }
+            }
         }
         #sidebar {
             aside {
@@ -1214,6 +1260,43 @@ header {
     }
     #wrapper {
         padding: 0 20px;
+        #banner-wrapper {
+            margin-left: -20px;
+            padding-top: 0;
+            .wrapper {
+                padding-top: 62px;
+            }
+            .banner {
+                background: #334072;
+                background-image: none;
+                height: 100px;
+            }
+            .About {
+                background: #5e2b67;
+                background-image: none;
+            }
+            .Worship {
+                background: #006a6a;
+                background-image: none;
+            }
+            .Contact {
+                background: #6f4b2a;
+                background-image: none;
+            }
+            .Events {
+                background: #733126;
+                background-image: none;
+            }
+        }
+        header {
+            height: 180px;
+            .feature {
+                top: 64px;
+                .breadcrumb {
+                    padding: 10px 0 0;
+                }
+            }
+        }
         #main_nav {
             h2 {
                 left:0;
@@ -1316,6 +1399,12 @@ header {
                     font-size: 20px;
                     line-height: 24px;
                     padding-left: 30px;
+                }
+            }
+            .listing {
+                max-width: 580px;
+                .thumb {
+                    overflow: hidden;
                 }
             }
         }
