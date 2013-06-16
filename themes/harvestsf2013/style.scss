@@ -1081,106 +1081,106 @@ header {
     .home {
         #wrapper {
             background: transparent url(assets/img/header-background-mobile.png) repeat-x 50% 0px;
-        }
-        header {
-            height: 400px;
-            .banner {
-                margin-top: 62px;
-                aside.widget {
-                    background-position: 0px 15px;
-                    height: 30px;
-                    margin-top: 0px;
-                    padding: 18px 0 0 40px;
-                    h3 {
-                        font-size: 22px;
+            header {
+                height: 400px;
+                .banner {
+                    margin-top: 62px;
+                    aside.widget {
+                        background-position: 0px 15px;
+                        height: 30px;
+                        margin-top: 0px;
+                        padding: 18px 0 0 40px;
+                        h3 {
+                            font-size: 22px;
+                        }
                     }
-                }
-                aside.widget:hover {
-                    background-position: 0px 15px;
-                    height: 30px;
-                    margin-top: 0px;
-                    padding: 18px 0 0 40px;
-                }
-                .slider-container {
-                    .slider-wrapper {
-                        height: 259px;
-                        width: 242px;
+                    aside.widget:hover {
+                        background-position: 0px 15px;
+                        height: 30px;
+                        margin-top: 0px;
+                        padding: 18px 0 0 40px;
                     }
-                    #wpns_slider {
-                        border-bottom-left-radius: 120px;
-                        border-top-right-radius: 120px;
-                        height: 235px;
-                        width: 242px;
-                        .nivo-directionNav a {
-                            top: 65px;
+                    .slider-container {
+                        .slider-wrapper {
+                            height: 259px;
+                            width: 242px;
+                        }
+                        #wpns_slider {
+                            border-bottom-left-radius: 120px;
+                            border-top-right-radius: 120px;
+                            height: 235px;
+                            width: 242px;
+                            .nivo-directionNav a {
+                                top: 65px;
+                            }
                         }
                     }
                 }
             }
-        }
-        .span1 {
-            display: none;
-        }
-    }
-    #primary {
-        .more-link {
-            display: none;
-        }
-        .mobile-read-more {
-            display: block;
-            height: 120px;
-            margin: -130px 0 10px 0;
-            position: relative;
-            text-align: center;
-            z-index: 10000;
-
-            // e5e6e6
-            /* webkit */
-            background-image: -webkit-gradient(
-                linear, left top, left bottom, from(rgba(229,230,230,0.3)),
-                to(rgba(229,230,230,1)), color-stop(65%, #e5e6e6)
-            );
-            /* FF */
-            background-image: -moz-linear-gradient(
-                rgba(229, 230, 230, 0.3) 0%, rgba(229, 230, 230, 1) 65%
-            );
-
-            /* >IE8 */
-            filter: progid:DXImageTransform.Microsoft.gradient(
-                startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
-            );
-            /* =IE8 */
-            -ms-filter: progid:DXImageTransform.Microsoft.gradient(
-            startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
-            );
-
-            a {
-                display: block;
+            .span1 {
+                display: none;
             }
-            img {
-                margin-top: 50px;
-            }
-        }
-        #content {
-            article {
-                h1 {
-                    background: transparent url(assets/img/mobile-quote.png) no-repeat 0 0;
-                    font-size: 20px;
-                    line-height: 24px;
-                    padding-left: 30px;
+            #primary {
+                .more-link {
+                    display: none;
                 }
-            }
-            .listing {
-                max-width: 580px;
-                .thumb {
-                    overflow: hidden;
+                .mobile-read-more {
+                    display: block;
+                    height: 120px;
+                    margin: -130px 0 10px 0;
+                    position: relative;
+                    text-align: center;
+                    z-index: 10000;
+
+                    // e5e6e6
+                    /* webkit */
+                    background-image: -webkit-gradient(
+                        linear, left top, left bottom, from(rgba(229,230,230,0.3)),
+                        to(rgba(229,230,230,1)), color-stop(65%, #e5e6e6)
+                    );
+                    /* FF */
+                    background-image: -moz-linear-gradient(
+                        rgba(229, 230, 230, 0.3) 0%, rgba(229, 230, 230, 1) 65%
+                    );
+
+                    /* >IE8 */
+                    filter: progid:DXImageTransform.Microsoft.gradient(
+                        startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
+                    );
+                    /* =IE8 */
+                    -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+                    startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
+                    );
+
+                    a {
+                        display: block;
+                    }
+                    img {
+                        margin-top: 50px;
+                    }
                 }
-            }
-        }
-        #sidebar {
-            aside {
-                margin: 0 auto;
-                width: 280px;
+                #content {
+                    article {
+                        h1 {
+                            background: transparent url(assets/img/mobile-quote.png) no-repeat 0 0;
+                            font-size: 20px;
+                            line-height: 24px;
+                            padding-left: 30px;
+                        }
+                    }
+                    .listing {
+                        max-width: 580px;
+                        .thumb {
+                            overflow: hidden;
+                        }
+                    }
+                }
+                #sidebar {
+                    aside {
+                        margin: 0 auto;
+                        width: 280px;
+                    }
+                }
             }
         }
     }
@@ -1320,107 +1320,107 @@ header {
     .home {
         #wrapper {
             background: transparent url(assets/img/header-background-mobile.png) repeat-x 50% 0px;
-        }
-        header {
-            height: 400px;
-            .banner {
-                margin-top: 62px;
-                aside.widget {
-                    background-position: 0px 15px;
-                    height: 30px;
-                    margin-top: 0px;
-                    padding: 18px 0 0 40px;
-                    h3.widget-title {
-                        font-size: 16px;
-                        line-height: 24px;
+            header {
+                height: 400px;
+                .banner {
+                    margin-top: 62px;
+                    aside.widget {
+                        background-position: 0px 15px;
+                        height: 30px;
+                        margin-top: 0px;
+                        padding: 18px 0 0 40px;
+                        h3.widget-title {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
                     }
-                }
-                aside.widget:hover {
-                    background-position: 0px 15px;
-                    height: 30px;
-                    margin-top: 0px;
-                    padding: 18px 0 0 40px;
-                }
-                .slider-container {
-                    .slider-wrapper {
-                        height: 259px;
-                        width: 242px;
+                    aside.widget:hover {
+                        background-position: 0px 15px;
+                        height: 30px;
+                        margin-top: 0px;
+                        padding: 18px 0 0 40px;
                     }
-                    #wpns_slider {
-                        border-bottom-left-radius: 120px;
-                        border-top-right-radius: 120px;
-                        height: 235px;
-                        width: 242px;
-                        .nivo-directionNav a {
-                            top: 65px;
+                    .slider-container {
+                        .slider-wrapper {
+                            height: 259px;
+                            width: 242px;
+                        }
+                        #wpns_slider {
+                            border-bottom-left-radius: 120px;
+                            border-top-right-radius: 120px;
+                            height: 235px;
+                            width: 242px;
+                            .nivo-directionNav a {
+                                top: 65px;
+                            }
                         }
                     }
                 }
             }
-        }
-        .span1 {
-            display: none;
-        }
-    }
-    #primary {
-        .more-link {
-            display: none;
-        }
-        .mobile-read-more {
-            display: block;
-            height: 120px;
-            margin: -130px 0 10px 0;
-            position: relative;
-            text-align: center;
-            z-index: 10000;
-
-            // e5e6e6
-        /* webkit */
-            background-image: -webkit-gradient(
-                linear, left top, left bottom, from(rgba(229,230,230,0.3)),
-                to(rgba(229,230,230,1)), color-stop(65%, #e5e6e6)
-            );
-        /* FF */
-            background-image: -moz-linear-gradient(
-                rgba(229, 230, 230, 0.3) 0%, rgba(229, 230, 230, 1) 65%
-            );
-
-        /* >IE8 */
-            filter: progid:DXImageTransform.Microsoft.gradient(
-                startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
-            );
-        /* =IE8 */
-            -ms-filter: progid:DXImageTransform.Microsoft.gradient(
-            startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
-            );
-
-            a {
-                display: block;
+            .span1 {
+                display: none;
             }
-            img {
-                margin-top: 50px;
-            }
-        }
-        #content {
-            article {
-                h1 {
-                    background: transparent url(assets/img/mobile-quote.png) no-repeat 0 0;
-                    font-size: 20px;
-                    line-height: 24px;
-                    padding-left: 30px;
+            #primary {
+                .more-link {
+                    display: none;
                 }
-            }
-            .listing {
-                max-width: 580px;
-                .thumb {
-                    overflow: hidden;
+                .mobile-read-more {
+                    display: block;
+                    height: 120px;
+                    margin: -130px 0 10px 0;
+                    position: relative;
+                    text-align: center;
+                    z-index: 10000;
+
+                    // e5e6e6
+                /* webkit */
+                    background-image: -webkit-gradient(
+                        linear, left top, left bottom, from(rgba(229,230,230,0.3)),
+                        to(rgba(229,230,230,1)), color-stop(65%, #e5e6e6)
+                    );
+                /* FF */
+                    background-image: -moz-linear-gradient(
+                        rgba(229, 230, 230, 0.3) 0%, rgba(229, 230, 230, 1) 65%
+                    );
+
+                /* >IE8 */
+                    filter: progid:DXImageTransform.Microsoft.gradient(
+                        startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
+                    );
+                /* =IE8 */
+                    -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+                    startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
+                    );
+
+                    a {
+                        display: block;
+                    }
+                    img {
+                        margin-top: 50px;
+                    }
                 }
-            }
-        }
-        #sidebar {
-            aside {
-                margin: 0 auto;
-                width: 280px;
+                #content {
+                    article {
+                        h1 {
+                            background: transparent url(assets/img/mobile-quote.png) no-repeat 0 0;
+                            font-size: 20px;
+                            line-height: 24px;
+                            padding-left: 30px;
+                        }
+                    }
+                    .listing {
+                        max-width: 580px;
+                        .thumb {
+                            overflow: hidden;
+                        }
+                    }
+                }
+                #sidebar {
+                    aside {
+                        margin: 0 auto;
+                        width: 280px;
+                    }
+                }
             }
         }
     }

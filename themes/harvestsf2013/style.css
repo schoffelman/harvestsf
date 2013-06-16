@@ -805,68 +805,67 @@ header {
 
   .home #wrapper {
     background: transparent url(assets/img/header-background-mobile.png) repeat-x 50% 0px; }
-  .home header {
-    height: 400px; }
-    .home header .banner {
-      margin-top: 62px; }
-      .home header .banner aside.widget {
-        background-position: 0px 15px;
-        height: 30px;
-        margin-top: 0px;
-        padding: 18px 0 0 40px; }
-        .home header .banner aside.widget h3 {
-          font-size: 22px; }
-      .home header .banner aside.widget:hover {
-        background-position: 0px 15px;
-        height: 30px;
-        margin-top: 0px;
-        padding: 18px 0 0 40px; }
-      .home header .banner .slider-container .slider-wrapper {
-        height: 259px;
-        width: 242px; }
-      .home header .banner .slider-container #wpns_slider {
-        border-bottom-left-radius: 120px;
-        border-top-right-radius: 120px;
-        height: 235px;
-        width: 242px; }
-        .home header .banner .slider-container #wpns_slider .nivo-directionNav a {
-          top: 65px; }
-  .home .span1 {
-    display: none; }
-
-  #primary .more-link {
-    display: none; }
-  #primary .mobile-read-more {
-    display: block;
-    height: 120px;
-    margin: -130px 0 10px 0;
-    position: relative;
-    text-align: center;
-    z-index: 10000;
-    /* webkit */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 230, 230, 0.3)), to(#e5e6e6), color-stop(65%, #e5e6e6));
-    /* FF */
-    background-image: -moz-linear-gradient(rgba(229, 230, 230, 0.3) 0%, #e5e6e6 65%);
-    /* >IE8 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6             );
-    /* =IE8 */
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6             ); }
-    #primary .mobile-read-more a {
-      display: block; }
-    #primary .mobile-read-more img {
-      margin-top: 50px; }
-  #primary #content article h1 {
-    background: transparent url(assets/img/mobile-quote.png) no-repeat 0 0;
-    font-size: 20px;
-    line-height: 24px;
-    padding-left: 30px; }
-  #primary #content .listing {
-    max-width: 580px; }
-    #primary #content .listing .thumb {
-      overflow: hidden; }
-  #primary #sidebar aside {
-    margin: 0 auto;
-    width: 280px; }
+    .home #wrapper header {
+      height: 400px; }
+      .home #wrapper header .banner {
+        margin-top: 62px; }
+        .home #wrapper header .banner aside.widget {
+          background-position: 0px 15px;
+          height: 30px;
+          margin-top: 0px;
+          padding: 18px 0 0 40px; }
+          .home #wrapper header .banner aside.widget h3 {
+            font-size: 22px; }
+        .home #wrapper header .banner aside.widget:hover {
+          background-position: 0px 15px;
+          height: 30px;
+          margin-top: 0px;
+          padding: 18px 0 0 40px; }
+        .home #wrapper header .banner .slider-container .slider-wrapper {
+          height: 259px;
+          width: 242px; }
+        .home #wrapper header .banner .slider-container #wpns_slider {
+          border-bottom-left-radius: 120px;
+          border-top-right-radius: 120px;
+          height: 235px;
+          width: 242px; }
+          .home #wrapper header .banner .slider-container #wpns_slider .nivo-directionNav a {
+            top: 65px; }
+    .home #wrapper .span1 {
+      display: none; }
+    .home #wrapper #primary .more-link {
+      display: none; }
+    .home #wrapper #primary .mobile-read-more {
+      display: block;
+      height: 120px;
+      margin: -130px 0 10px 0;
+      position: relative;
+      text-align: center;
+      z-index: 10000;
+      /* webkit */
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 230, 230, 0.3)), to(#e5e6e6), color-stop(65%, #e5e6e6));
+      /* FF */
+      background-image: -moz-linear-gradient(rgba(229, 230, 230, 0.3) 0%, #e5e6e6 65%);
+      /* >IE8 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6                     );
+      /* =IE8 */
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6                     ); }
+      .home #wrapper #primary .mobile-read-more a {
+        display: block; }
+      .home #wrapper #primary .mobile-read-more img {
+        margin-top: 50px; }
+    .home #wrapper #primary #content article h1 {
+      background: transparent url(assets/img/mobile-quote.png) no-repeat 0 0;
+      font-size: 20px;
+      line-height: 24px;
+      padding-left: 30px; }
+    .home #wrapper #primary #content .listing {
+      max-width: 580px; }
+      .home #wrapper #primary #content .listing .thumb {
+        overflow: hidden; }
+    .home #wrapper #primary #sidebar aside {
+      margin: 0 auto;
+      width: 280px; }
 
   #footer-body .container .tab {
     background: #006a6a;
@@ -965,69 +964,68 @@ header {
 
   .home #wrapper {
     background: transparent url(assets/img/header-background-mobile.png) repeat-x 50% 0px; }
-  .home header {
-    height: 400px; }
-    .home header .banner {
-      margin-top: 62px; }
-      .home header .banner aside.widget {
-        background-position: 0px 15px;
-        height: 30px;
-        margin-top: 0px;
-        padding: 18px 0 0 40px; }
-        .home header .banner aside.widget h3.widget-title {
-          font-size: 16px;
-          line-height: 24px; }
-      .home header .banner aside.widget:hover {
-        background-position: 0px 15px;
-        height: 30px;
-        margin-top: 0px;
-        padding: 18px 0 0 40px; }
-      .home header .banner .slider-container .slider-wrapper {
-        height: 259px;
-        width: 242px; }
-      .home header .banner .slider-container #wpns_slider {
-        border-bottom-left-radius: 120px;
-        border-top-right-radius: 120px;
-        height: 235px;
-        width: 242px; }
-        .home header .banner .slider-container #wpns_slider .nivo-directionNav a {
-          top: 65px; }
-  .home .span1 {
-    display: none; }
-
-  #primary .more-link {
-    display: none; }
-  #primary .mobile-read-more {
-    display: block;
-    height: 120px;
-    margin: -130px 0 10px 0;
-    position: relative;
-    text-align: center;
-    z-index: 10000;
-    /* webkit */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 230, 230, 0.3)), to(#e5e6e6), color-stop(65%, #e5e6e6));
-    /* FF */
-    background-image: -moz-linear-gradient(rgba(229, 230, 230, 0.3) 0%, #e5e6e6 65%);
-    /* >IE8 */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6             );
-    /* =IE8 */
-    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6             ); }
-    #primary .mobile-read-more a {
-      display: block; }
-    #primary .mobile-read-more img {
-      margin-top: 50px; }
-  #primary #content article h1 {
-    background: transparent url(assets/img/mobile-quote.png) no-repeat 0 0;
-    font-size: 20px;
-    line-height: 24px;
-    padding-left: 30px; }
-  #primary #content .listing {
-    max-width: 580px; }
-    #primary #content .listing .thumb {
-      overflow: hidden; }
-  #primary #sidebar aside {
-    margin: 0 auto;
-    width: 280px; }
+    .home #wrapper header {
+      height: 400px; }
+      .home #wrapper header .banner {
+        margin-top: 62px; }
+        .home #wrapper header .banner aside.widget {
+          background-position: 0px 15px;
+          height: 30px;
+          margin-top: 0px;
+          padding: 18px 0 0 40px; }
+          .home #wrapper header .banner aside.widget h3.widget-title {
+            font-size: 16px;
+            line-height: 24px; }
+        .home #wrapper header .banner aside.widget:hover {
+          background-position: 0px 15px;
+          height: 30px;
+          margin-top: 0px;
+          padding: 18px 0 0 40px; }
+        .home #wrapper header .banner .slider-container .slider-wrapper {
+          height: 259px;
+          width: 242px; }
+        .home #wrapper header .banner .slider-container #wpns_slider {
+          border-bottom-left-radius: 120px;
+          border-top-right-radius: 120px;
+          height: 235px;
+          width: 242px; }
+          .home #wrapper header .banner .slider-container #wpns_slider .nivo-directionNav a {
+            top: 65px; }
+    .home #wrapper .span1 {
+      display: none; }
+    .home #wrapper #primary .more-link {
+      display: none; }
+    .home #wrapper #primary .mobile-read-more {
+      display: block;
+      height: 120px;
+      margin: -130px 0 10px 0;
+      position: relative;
+      text-align: center;
+      z-index: 10000;
+      /* webkit */
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 230, 230, 0.3)), to(#e5e6e6), color-stop(65%, #e5e6e6));
+      /* FF */
+      background-image: -moz-linear-gradient(rgba(229, 230, 230, 0.3) 0%, #e5e6e6 65%);
+      /* >IE8 */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6                     );
+      /* =IE8 */
+      -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6                     ); }
+      .home #wrapper #primary .mobile-read-more a {
+        display: block; }
+      .home #wrapper #primary .mobile-read-more img {
+        margin-top: 50px; }
+    .home #wrapper #primary #content article h1 {
+      background: transparent url(assets/img/mobile-quote.png) no-repeat 0 0;
+      font-size: 20px;
+      line-height: 24px;
+      padding-left: 30px; }
+    .home #wrapper #primary #content .listing {
+      max-width: 580px; }
+      .home #wrapper #primary #content .listing .thumb {
+        overflow: hidden; }
+    .home #wrapper #primary #sidebar aside {
+      margin: 0 auto;
+      width: 280px; }
 
   #footer-body .container .tab {
     background: #006a6a;

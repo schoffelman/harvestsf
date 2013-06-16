@@ -55,11 +55,13 @@
     <?php wp_nav_menu( array( 'theme_location' => 'Main Navigation', 'menu_class' => 'mobile-nav-menu  visible-phone' ) ); ?>
 </div>
 <div id="wrapper">
-    <div id="banner-wrapper">
-        <div class="wrapper">
-            <div class="banner <?php echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent ); ?>"></div>
+    <?php if (!is_home && !is_front_page()) { ?>
+        <div id="banner-wrapper">
+            <div class="wrapper">
+                <div class="banner <?php echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent ); ?>"></div>
+            </div>
         </div>
-    </div>
+    <?php } ?>
     <div class="container">
         <header>
             <hgroup id="util_nav" class="hidden-phone">
