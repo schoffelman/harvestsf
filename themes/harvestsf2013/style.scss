@@ -261,7 +261,6 @@ nav#main_nav {
 		}
 	}
     .nav-menu {
-
 		position: absolute;
 		top: 142px;
 		right: 12px;
@@ -270,6 +269,7 @@ nav#main_nav {
 			color: $main_color;
 			font-family: ProximaNova-Light, Arial, sans-serif;
 			font-size: 24px;
+            padding-bottom: 27px;
             text-decoration: none;
 			text-transform: uppercase;
 		}
@@ -1002,31 +1002,73 @@ header {
         padding: 0 0;
     }
     #mobile-main-nav-button {
-        display: none !important;
+        float: right;
+        margin: 10px;
         position: absolute;
-        right: 20px;
-        top: 0;
+        right: 0px;
+        z-index: 20;
     }
     #mobile-main-nav {
-        display: none !important;
+        -webkit-transition: .9s all ease;
+        -moz-transition: .9s all ease;
+        -o-transition: .9s all ease;
+        -ms-transition: .9s all ease;
+        transition: .9s all ease;
         background: $white;
+        -moz-box-shadow: 5px 0px 35px rgba(255,255,255,0.15);
+        -webkit-box-shadow: 5px 0px 35px rgba(255,255,255,0.15);
         box-shadow: 5px 0px 35px #000;
-        display: none;
-        left: 20px;
+        display: block;
+        height: 100%;
+        left: -180px;
+        padding: 30px 0 0 0;
         position: absolute;
         top: 0;
+        z-index: 1000;
         li {
             list-style: none;
-            margin: 5px 10px 0 10px;
+            margin:5px 10px 0 10px;
             a {
                 color: $body_font_color;
                 font-size: 16px;
+            }
+            a:hover,
+            a:active {
+                color: $orange_hover;
+            }
+        }
+    }
+    .mobile-main-nav-show{
+        #mobile-main-nav {
+            left: 0;
+        }
+        #wrapper {
+            .container {
+                -webkit-transition: .9s all ease;
+                -moz-transition: .9s all ease;
+                -o-transition: .9s all ease;
+                -ms-transition: .9s all ease;
+                transition: .9s all ease;
+                padding-left:175px;
+                header {
+                    #main_nav {
+                        h2 {
+                            -webkit-transition: .9s all ease;
+                            -moz-transition: .9s all ease;
+                            -o-transition: .9s all ease;
+                            -ms-transition: .9s all ease;
+                            transition: .9s all ease;
+                            left: 175px;
+                        }
+                    }
+                }
             }
         }
     }
     #wrapper {
         padding: 0 20px;
         #banner-wrapper {
+            height: 162px;
             margin-left: -20px;
             padding-top: 0;
             .wrapper {
@@ -1067,8 +1109,20 @@ header {
                 }
             }
         }
+        .container {
+            -webkit-transition: .9s all ease;
+            -moz-transition: .9s all ease;
+            -o-transition: .9s all ease;
+            -ms-transition: .9s all ease;
+            transition: .9s all ease;
+        }
         #main_nav {
             h2 {
+                -webkit-transition: .9s all ease;
+                -moz-transition: .9s all ease;
+                -o-transition: .9s all ease;
+                -ms-transition: .9s all ease;
+                transition: .9s all ease;
                 left:0;
                 margin: 8px 0;
                 top:0;
@@ -1240,25 +1294,66 @@ header {
         padding: 0 0;
     }
     #mobile-main-nav-button {
-        display: none !important;
+        float: right;
+        margin: 10px;
         position: absolute;
-        right: 20px;
-        top: 0;
+        right: 0px;
+        z-index: 2000;
     }
     #mobile-main-nav {
-        display: none !important;
+        -webkit-transition: .9s all ease;
+        -moz-transition: .9s all ease;
+        -o-transition: .9s all ease;
+        -ms-transition: .9s all ease;
+        transition: .9s all ease;
         background: $white;
+        -moz-box-shadow: 5px 0px 35px rgba(255,255,255,0.15);
+        -webkit-box-shadow: 5px 0px 35px rgba(255,255,255,0.15);
         box-shadow: 5px 0px 35px #000;
-        display: none;
-        left: 20px;
+        display: block;
+        height: 100%;
+        left: -180px;
+        padding: 30px 0 0 0;
         position: absolute;
         top: 0;
+        z-index: 1000;
         li {
             list-style: none;
-            margin: 5px 10px 0 10px;
+            margin:5px 10px 0 10px;
             a {
                 color: $body_font_color;
                 font-size: 16px;
+            }
+            a:hover,
+            a:active {
+                color: $orange_hover;
+            }
+        }
+    }
+    .mobile-main-nav-show{
+        #mobile-main-nav {
+            left: 0;
+        }
+        #wrapper {
+            .container {
+                -webkit-transition: .9s all ease;
+                -moz-transition: .9s all ease;
+                -o-transition: .9s all ease;
+                -ms-transition: .9s all ease;
+                transition: .9s all ease;
+                padding-left:175px;
+                header {
+                    #main_nav {
+                        h2 {
+                            -webkit-transition: .9s all ease;
+                            -moz-transition: .9s all ease;
+                            -o-transition: .9s all ease;
+                            -ms-transition: .9s all ease;
+                            transition: .9s all ease;
+                            left: 175px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1307,8 +1402,20 @@ header {
                 }
             }
         }
+        .container {
+            -webkit-transition: .9s all ease;
+            -moz-transition: .9s all ease;
+            -o-transition: .9s all ease;
+            -ms-transition: .9s all ease;
+            transition: .9s all ease;
+        }
         #main_nav {
             h2 {
+                -webkit-transition: .9s all ease;
+                -moz-transition: .9s all ease;
+                -o-transition: .9s all ease;
+                -ms-transition: .9s all ease;
+                transition: .9s all ease;
                 left:0;
                 margin: 8px 0;
                 top:0;

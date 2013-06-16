@@ -40,9 +40,9 @@
 	<script type="text/javascript">stLight.options({publisher: "e66cc4c6-5267-408b-a467-e17f619e0353", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
     <script>
         $(function() {
-            $( "#mobile-main-nav-button" ).click(function() {
-                $( "#wrapper" ).toggle( 'slide', '', 500 );
-                return false;
+            $( "#mobile-main-nav-button" ).on("click",function(e) {
+                e.preventDefault();
+                $( "html" ).toggleClass( 'mobile-main-nav-show' );
             });
         });
     </script>
@@ -51,7 +51,7 @@
 <a id="mobile-main-nav-button" href="#" title="main navigation control" class="mobile-nav-control visible-phone">
     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile-nav-control.png" alt="main navigation control button">
 </a>
-<div id="mobile-main-nav">
+<div id="mobile-main-nav" role="navigation">
     <?php wp_nav_menu( array( 'theme_location' => 'Main Navigation', 'menu_class' => 'mobile-nav-menu  visible-phone' ) ); ?>
 </div>
 <div id="wrapper">
