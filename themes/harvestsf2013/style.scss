@@ -1293,7 +1293,7 @@ header {
             }
         }
         header {
-            height: 180px;
+            height: 162px;
             .feature {
                 top: 64px;
                 .breadcrumb {
@@ -1303,6 +1303,7 @@ header {
                 h1.entry-title {
                     font-size: 28px;
                     line-height: 28px;
+                    margin-top: 0;
                 }
             }
         }

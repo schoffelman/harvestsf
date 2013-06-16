@@ -946,7 +946,7 @@ header {
         background: #733126;
         background-image: none; }
     #wrapper header {
-      height: 180px; }
+      height: 162px; }
       #wrapper header .feature {
         top: 64px; }
         #wrapper header .feature .breadcrumb {
@@ -954,7 +954,8 @@ header {
           padding: 10px 0 0; }
         #wrapper header .feature h1.entry-title {
           font-size: 28px;
-          line-height: 28px; }
+          line-height: 28px;
+          margin-top: 0; }
     #wrapper #main_nav h2 {
       left: 0;
       margin: 8px 0;
