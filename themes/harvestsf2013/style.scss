@@ -1068,7 +1068,7 @@ header {
                         height: 235px;
                         width: 242px;
                         .nivo-directionNav a {
-                            top: 165px;
+                            top: 65px;
                         }
                     }
                 }
@@ -1129,6 +1129,7 @@ header {
         }
         #sidebar {
             aside {
+                margin: 0 auto;
                 width: 300px;
             }
         }
@@ -1136,14 +1137,25 @@ header {
     #footer-body {
         .container {
             .tab {
-                background-position: top right;
-                width: 70%;
+                background: $teal;
+                background-image: none;
+                height: 30px;
+                padding: 9px 0;
+                text-align: center;
+                width: 100%;
+                div {
+                    float:none;
+                    text-align: center;
+                }
+                div.divide {
+                    display: none;
+                }
             }
             footer {
                 .span8 {
                     h2 {
                         font-size: 22px;
-                        line-height: 55px;
+                        line-height: 24px;
                     }
                     #map-container {
                         margin-left: 70px;
@@ -1177,29 +1189,186 @@ header {
     body {
         padding: 0 0;
     }
-    #wrapper {
-        padding: 0 20px;
-        h2 {
-            left:0;
-            top:0;
+    #mobile-main-nav-button {
+        display: none !important;
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+    #mobile-main-nav {
+        display: none !important;
+        background: $white;
+        box-shadow: 5px 0px 35px #000;
+        display: none;
+        left: 20px;
+        position: absolute;
+        top: 0;
+        li {
+            list-style: none;
+            margin: 5px 10px 0 10px;
+            a {
+                color: $body_font_color;
+                font-size: 16px;
+            }
         }
     }
-    .home {
-        #wrapper {
-    	    background: transparent url(assets/img/header-background-mobile.png) repeat-x 50% 0px;
-        }
-        header {
-            .banner {
-                aside.widget {
-                    height: 114px;
-                    margin-top: 18px;
-                    padding-top: 18px;
+    #wrapper {
+        padding: 0 20px;
+        #main_nav {
+            h2 {
+                left:0;
+                margin: 8px 0;
+                top:0;
+                img {
+                    width: 185px;
                 }
             }
         }
     }
-    header {
-        border: 1px solid blue;
+    .home {
+        #wrapper {
+            background: transparent url(assets/img/header-background-mobile.png) repeat-x 50% 0px;
+        }
+        header {
+            height: 400px;
+            .banner {
+                margin-top: 62px;
+                aside.widget {
+                    background-position: 0px 15px;
+                    height: 30px;
+                    margin-top: 0px;
+                    padding: 18px 0 0 40px;
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+                aside.widget:hover {
+                    background-position: 0px 15px;
+                    height: 30px;
+                    margin-top: 0px;
+                    padding: 18px 0 0 40px;
+                }
+                .slider-container {
+                    .slider-wrapper {
+                        height: 259px;
+                        width: 242px;
+                    }
+                    #wpns_slider {
+                        border-bottom-left-radius: 120px;
+                        border-top-right-radius: 120px;
+                        height: 235px;
+                        width: 242px;
+                        .nivo-directionNav a {
+                            top: 65px;
+                        }
+                    }
+                }
+            }
+        }
+        .span1 {
+            display: none;
+        }
+    }
+    #primary {
+        .more-link {
+            display: none;
+        }
+        .mobile-read-more {
+            display: block;
+            height: 120px;
+            margin: -130px 0 10px 0;
+            position: relative;
+            text-align: center;
+            z-index: 10000;
+
+            // e5e6e6
+        /* webkit */
+            background-image: -webkit-gradient(
+                linear, left top, left bottom, from(rgba(229,230,230,0.3)),
+                to(rgba(229,230,230,1)), color-stop(65%, #e5e6e6)
+            );
+        /* FF */
+            background-image: -moz-linear-gradient(
+                rgba(229, 230, 230, 0.3) 0%, rgba(229, 230, 230, 1) 65%
+            );
+
+        /* >IE8 */
+            filter: progid:DXImageTransform.Microsoft.gradient(
+                startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
+            );
+        /* =IE8 */
+            -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+            startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
+            );
+
+            a {
+                display: block;
+            }
+            img {
+                margin-top: 50px;
+            }
+        }
+        #content {
+            article {
+                h1 {
+                    background: transparent url(assets/img/mobile-quote.png) no-repeat 0 0;
+                    font-size: 20px;
+                    line-height: 24px;
+                    padding-left: 30px;
+                }
+            }
+        }
+        #sidebar {
+            aside {
+                margin: 0 auto;
+                width: 300px;
+            }
+        }
+    }
+    #footer-body {
+        .container {
+            .tab {
+                background: $teal;
+                background-image: none;
+                height: 30px;
+                padding: 9px 0;
+                text-align: center;
+                width: 100%;
+                div {
+                    float:none;
+                    text-align: center;
+                }
+                div.divide {
+                    display: none;
+                }
+            }
+            footer {
+                .span8 {
+                    h2 {
+                        font-size: 22px;
+                        line-height: 24px;
+                    }
+                    #map-container {
+                        display: none;
+                    }
+                }
+                .span4 {
+                    margin-top: 10px;
+                    h2 {
+                        font-size: 22px;
+                        line-height: 45px;
+                        margin-left: 70px;
+                        .fb {
+                            margin-left: 15px;
+                        }
+                    }
+                    .insta {
+                        margin-left: 70px;
+                        width: 220px;
+                    }
+                }
+            }
+        }
     }
 }
 

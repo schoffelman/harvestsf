@@ -5,15 +5,15 @@
 		<div id="footer-body">
 			<div class="container">
 				<div class="tab">
-					<div class="sunday">Sunday <span class="hidden-phone">Worship </span>@ 10:30AM</div>
+					<div class="sunday">Sunday Worship @ 10:30AM</div>
 					<div class="divide">//</div>
-					<div class="wednesday">Wednesday <span class="hidden-phone">Youth </span>@ 7PM</div>
+					<div class="wednesday">Wednesday Youth @ 7PM</div>
 				</div><!-- .tab -->
 				<footer class="row-fluid">
 				    <div class="span8">
-				    	<h2><span>Visit Us</span><span class="divide">//</span><span>All Are Welcome!</span></h2>
+				    	<h2><span>Visit Us</span><span class="divide hidden-phone">//</span><div class="visible-phone"></div><span>All Are Welcome!</span></h2>
 				    	<address>
-				    		<h4>309 S Bahnson Ave Sioux Falls, SD 57103</h4>
+				    		<h4>309 S Bahnson Ave <div class="visible-phone"></div>Sioux Falls, SD 57103</h4>
 				    		<h4>PH <span>605.335.5800<span></h4>
 				    	</address>
                         <div id="map-container">
