@@ -65,7 +65,10 @@
     <div class="container">
         <header>
             <hgroup id="util_nav" class="hidden-phone">
-                <div class="sunday">Sunday Worship @ 10:30AM</div>
+                <?php $update_name = get_the_category_by_ID(25); ?>
+                <div class="updates left"><a href="<?php echo get_category_link('25'); ?>" title="<?php echo $update_name; ?>"><?php echo $update_name; ?></a></div>
+                <div class="divide">//</div>
+                <div class="sunday">Sunday @ 10:30AM</div>
                 <div class="divide">//</div>
                 <div class="wednesday">Wednesday Youth @ 7PM</div>
                 <div class="divide">//</div>
