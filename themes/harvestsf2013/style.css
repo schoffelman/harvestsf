@@ -19,9 +19,18 @@ Have fun and give back to others.
   float: right;
   text-align: right; }
 
-.center, aligncenter {
+.center, .aligncenter {
   margin: 0 auto;
   text-align: center; }
+
+img.left, img.alignleft {
+  margin-right: 10px; }
+
+img.right, img.alignright {
+  margin-left: 10px; }
+
+img.center, img.aligncenter {
+  margin: 0 10px; }
 
 .clearleft {
   clear: left; }
