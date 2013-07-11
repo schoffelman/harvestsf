@@ -25,7 +25,7 @@ get_header(); ?>
 			
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			    
-			    <div class="entry-content span10">
+			    <div class="entry-content span12">
 
                     <?php get_template_part( 'content', get_post_format() ); ?>
 
