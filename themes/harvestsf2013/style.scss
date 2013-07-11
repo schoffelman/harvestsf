@@ -116,6 +116,7 @@ body,
         padding: 30px;
     }
     ul {
+        font-size: 24px;
         margin: 0;
         padding: 0;
         li {
@@ -124,6 +125,7 @@ body,
         }
     }
     ol {
+        font-size: 24px;
         margin: 0;
         padding: 0;
         li {
@@ -541,6 +543,9 @@ header {
 		 	.entry-meta {
 			 	padding: 10px 0 30px;
 		 	}
+            ol, ul {
+                font-size: 16px;
+            }
 		}
         article.page {
             .entry-meta {
@@ -621,6 +626,12 @@ header {
 				}
 			}
 		}
+        .wp-pagenavi {
+            a, a:hover, span {
+                border: none;
+                padding: 0 5px;
+            }
+        }
 	}
 	#sidebar {
 		.widget {

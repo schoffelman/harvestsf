@@ -95,6 +95,7 @@ body blockquote,
   padding: 30px; }
 body ul,
 #primary ul {
+  font-size: 24px;
   margin: 0;
   padding: 0; }
   body ul li,
@@ -103,6 +104,7 @@ body ul,
     margin: 20px 0 0 40px; }
 body ol,
 #primary ol {
+  font-size: 24px;
   margin: 0;
   padding: 0; }
   body ol li,
@@ -434,6 +436,8 @@ header {
     margin: 0 0 25px; }
   #primary #content article .entry-meta {
     padding: 10px 0 30px; }
+  #primary #content article ol, #primary #content article ul {
+    font-size: 16px; }
   #primary #content article.page .entry-meta {
     float: right; }
   #primary #content .entry-content {
@@ -495,6 +499,9 @@ header {
         position: absolute;
         right: 0;
         top: 4px; }
+  #primary #content .wp-pagenavi a, #primary #content .wp-pagenavi a:hover, #primary #content .wp-pagenavi span {
+    border: none;
+    padding: 0 5px; }
   #primary #sidebar .widget {
     margin-bottom: 30px; }
     #primary #sidebar .widget ul, #primary #sidebar .widget li {
