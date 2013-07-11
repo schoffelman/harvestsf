@@ -72,6 +72,10 @@
                 <?php $update_name = get_the_category_by_ID(25); ?>
                 <div class="updates left"><a href="<?php echo get_category_link('25'); ?>" title="<?php echo $update_name; ?>"><?php echo $update_name; ?></a></div>
                 <div class="divide">//</div>
+                <div class="updates left"><a href="/contact" title="Contact">Contact</a></div>
+                <div class="divide">//</div>
+                <div class="updates left"><a href="/give" title="Give">Give</a></div>
+                <div class="divide">//</div>
                 <div class="social"><div class="follow">Follow Us: </div><a href="http://facebook.com/harvestsf" title="Facebook" class="fb" target="_blank"><div class="text">Facebook</div></a><a href="http://twitter.com/harvestsf" title="Twitter" class="tw" target="_blank"><div class="text">Twitter</div></a></div>
             </hgroup>
             <nav id="main_nav">
