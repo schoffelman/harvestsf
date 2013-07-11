@@ -44,7 +44,7 @@ get_header(); ?>
 <div id="primary" class="row-fluid">
     <div id="content" class="span8" role="main">
     
-    	<?php $homepage = new WP_Query( 'category_name=updates&posts_per_page=1' ); ?>
+    	<?php $homepage = new WP_Query( 'category_name=latest-updates&posts_per_page=1' ); ?>
 			
 			<?php if ( $homepage->have_posts() ) : while ( $homepage->have_posts() ) : $homepage->the_post(); ?>
 				
