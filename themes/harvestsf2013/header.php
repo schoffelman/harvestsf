@@ -43,11 +43,6 @@
             $( "#mobile-main-nav-button" ).on("click",function(e) {
                 e.preventDefault();
                 $( "html" ).toggleClass( 'mobile-main-nav-show' );
-                $( "#mobile-main-nav" ).css("-webkit-transition", ".9s all ease");
-                //-moz-transition: .9s all ease;
-                //-o-transition: .9s all ease;
-                //-ms-transition: .9s all ease;
-                //transition: .9s all ease;");
             });
         });
     </script>
