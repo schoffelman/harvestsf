@@ -43,6 +43,11 @@
             $( "#mobile-main-nav-button" ).on("click",function(e) {
                 e.preventDefault();
                 $( "html" ).toggleClass( 'mobile-main-nav-show' );
+                $( "#mobile-main-nav" ).css("-webkit-transition", ".9s all ease");
+                //-moz-transition: .9s all ease;
+                //-o-transition: .9s all ease;
+                //-ms-transition: .9s all ease;
+                //transition: .9s all ease;");
             });
         });
     </script>
@@ -53,6 +58,7 @@
 </a>
 <div id="mobile-main-nav" role="navigation">
     <?php wp_nav_menu( array( 'theme_location' => 'Main Navigation', 'menu_class' => 'mobile-nav-menu  visible-phone' ) ); ?>
+    <div class="clearboth"></div>
 </div>
 <div id="wrapper">
     <?php if (!is_home() && !is_front_page()) { ?>

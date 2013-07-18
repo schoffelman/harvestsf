@@ -128,8 +128,12 @@
         g.src='//www.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
-
-
+<script type="text/javascript">
+    jQuery(document).ready(function($){
+        var wrapperheight = $("#wrapper").height() * 1.5; // hack - not sure why it doesn't match up evenly yet.
+        $("#mobile-main-nav").height(wrapperheight);
+    });
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

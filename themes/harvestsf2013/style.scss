@@ -247,6 +247,9 @@ body {
 	max-width: 940px;
 }
 
+#mobile-main-nav {
+    display: none;
+}
 
 nav#main_nav {
 	h2 {
@@ -1015,10 +1018,11 @@ header {
 }
  
 /* Landscape phone to portrait tablet */
-@media (min-width: 481px) and  (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
     body {
         padding: 0 0;
     }
+
     #mobile-main-nav-button {
         float: right;
         margin: 10px;
@@ -1027,64 +1031,65 @@ header {
         z-index: 20;
     }
     #mobile-main-nav {
-        -webkit-transition: .9s all ease;
-        -moz-transition: .9s all ease;
-        -o-transition: .9s all ease;
-        -ms-transition: .9s all ease;
-        transition: .9s all ease;
-        background: $white;
-        -moz-box-shadow: 5px 0px 35px rgba(255,255,255,0.15);
-        -webkit-box-shadow: 5px 0px 35px rgba(255,255,255,0.15);
-        box-shadow: 5px 0px 35px #000;
-        display: block;
-        height: 100%;
-        left: -180px;
-        padding: 30px 0 0 0;
-        position: absolute;
-        top: 0;
-        z-index: 1000;
-        li {
-            list-style: none;
-            margin:5px 10px 0 10px;
-            a {
-                color: $body_font_color;
-                font-size: 16px;
-            }
-            a:hover,
-            a:active {
-                color: $orange_hover;
-            }
-        }
+        display: none;
     }
     .mobile-main-nav-show{
+
         #mobile-main-nav {
-            left: 0;
+            background: $white;
+            display: block;
+            float: right;
+            height: auto;
+            position: relative;
+            width: 40%;
+            padding-top: 62px;
+
+
+            -webkit-transition: .9s all ease;
+            -moz-transition: .9s all ease;
+            -o-transition: .9s all ease;
+            -ms-transition: .9s all ease;
+            transition: .9s all ease;
+
+            .menu-main-navigation-container {
+                background: $white url(assets/img/gradient-mobile-nav.png) repeat-y 0 44px;
+                border-top: 1px solid $gray_border;
+                height: 100%;
+                padding: 0 0 0 4px;
+            }
+            ul>li {
+                list-style: none;
+                margin: 0 0;
+                padding: 0 0;
+            }
+            ul>li>a {
+                border-bottom: 1px solid $gray_border;
+                display: block;
+                padding: 20px 14px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            ul>li>ul {
+                border: none;
+            }
+            ul>li>ul>li>a {
+                background: transparent url("assets/img/orange-right-arrow.png") no-repeat 16px 50%;
+                color: $body_font_color;
+                font-size: 18px;
+                padding-left: 40px;
+            }
+            ul>li>ul>li>a:hover {
+                text-decoration: underline;
+            }
         }
         #wrapper {
-            .container {
-                -webkit-transition: .9s all ease;
-                -moz-transition: .9s all ease;
-                -o-transition: .9s all ease;
-                -ms-transition: .9s all ease;
-                transition: .9s all ease;
-                padding-left:175px;
-                header {
-                    #main_nav {
-                        h2 {
-                            -webkit-transition: .9s all ease;
-                            -moz-transition: .9s all ease;
-                            -o-transition: .9s all ease;
-                            -ms-transition: .9s all ease;
-                            transition: .9s all ease;
-                            left: 175px;
-                        }
-                    }
-                }
-            }
+            float: left;
+            padding: 0 5%;
+            width: 50%;
         }
     }
     #wrapper {
-        padding: 0 20px;
+        padding: 0 5%;
         #banner-wrapper {
             height: 162px;
             margin-left: -20px;
@@ -1127,6 +1132,7 @@ header {
                 }
             }
         }
+        /*
         .container {
             -webkit-transition: .9s all ease;
             -moz-transition: .9s all ease;
@@ -1134,13 +1140,9 @@ header {
             -ms-transition: .9s all ease;
             transition: .9s all ease;
         }
+        */
         #main_nav {
             h2 {
-                -webkit-transition: .9s all ease;
-                -moz-transition: .9s all ease;
-                -o-transition: .9s all ease;
-                -ms-transition: .9s all ease;
-                transition: .9s all ease;
                 left:0;
                 margin: 8px 0;
                 top:0;
@@ -1205,21 +1207,21 @@ header {
                     z-index: 10000;
 
                     // e5e6e6
-                    /* webkit */
+                    // webkit
                     background-image: -webkit-gradient(
                         linear, left top, left bottom, from(rgba(229,230,230,0.3)),
                         to(rgba(229,230,230,1)), color-stop(65%, #e5e6e6)
                     );
-                    /* FF */
+                    // FF
                     background-image: -moz-linear-gradient(
                         rgba(229, 230, 230, 0.3) 0%, rgba(229, 230, 230, 1) 65%
                     );
 
-                    /* >IE8 */
+                    // >IE8
                     filter: progid:DXImageTransform.Microsoft.gradient(
                         startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
                     );
-                    /* =IE8 */
+                    // =IE8
                     -ms-filter: progid:DXImageTransform.Microsoft.gradient(
                     startColorstr=#FFE5E6E6, endColorstr=#FFE5E6E6
                     );
@@ -1255,6 +1257,9 @@ header {
                 }
             }
         }
+    }
+    #footer-wrapper {
+        clear: both;
     }
     #footer-body {
         .container {
@@ -1319,60 +1324,52 @@ header {
         z-index: 2000;
     }
     #mobile-main-nav {
-        -webkit-transition: .9s all ease;
-        -moz-transition: .9s all ease;
-        -o-transition: .9s all ease;
-        -ms-transition: .9s all ease;
-        transition: .9s all ease;
-        background: $white;
-        -moz-box-shadow: 5px 0px 35px rgba(255,255,255,0.15);
-        -webkit-box-shadow: 5px 0px 35px rgba(255,255,255,0.15);
-        box-shadow: 5px 0px 35px #000;
-        display: block;
-        height: 100%;
-        left: -180px;
-        padding: 30px 0 0 0;
-        position: absolute;
-        top: 0;
-        z-index: 1000;
-        li {
-            list-style: none;
-            margin:5px 10px 0 10px;
-            a {
-                color: $body_font_color;
-                font-size: 16px;
-            }
-            a:hover,
-            a:active {
-                color: $orange_hover;
-            }
-        }
+        display: none;
     }
     .mobile-main-nav-show{
         #mobile-main-nav {
-            left: 0;
+            background: $white;
+            display: block;
+            float: right;
+            height: auto;
+            position: relative;
+            width: 40%;
+            padding-top: 62px;
+            .menu-main-navigation-container {
+                background: $white url(assets/img/gradient-mobile-nav.png) repeat-y 0 44px;
+                border-top: 1px solid $gray_border;
+                height: 100%;
+                padding: 0 0 0 4px;
+            }
+            ul>li {
+                list-style: none;
+                margin: 0 0;
+                padding: 0 0;
+            }
+            ul>li>a {
+                border-bottom: 1px solid $gray_border;
+                display: block;
+                padding: 20px 14px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            ul>li>ul {
+                border: none;
+            }
+            ul>li>ul>li>a {
+                background: transparent url("assets/img/orange-right-arrow.png") no-repeat 16px 50%;
+                color: $body_font_color;
+                font-size: 18px;
+                padding-left: 40px;
+            }
+            ul>li>ul>li>a:hover {
+                text-decoration: underline;
+            }
         }
         #wrapper {
-            .container {
-                -webkit-transition: .9s all ease;
-                -moz-transition: .9s all ease;
-                -o-transition: .9s all ease;
-                -ms-transition: .9s all ease;
-                transition: .9s all ease;
-                padding-left:175px;
-                header {
-                    #main_nav {
-                        h2 {
-                            -webkit-transition: .9s all ease;
-                            -moz-transition: .9s all ease;
-                            -o-transition: .9s all ease;
-                            -ms-transition: .9s all ease;
-                            transition: .9s all ease;
-                            left: 175px;
-                        }
-                    }
-                }
-            }
+            float: left;
+            padding: 0 5%;
+            width: 50%;
         }
     }
     #wrapper {
