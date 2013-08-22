@@ -185,12 +185,14 @@ body {
 .home #wrapper {
   background: transparent url(assets/img/header-background.png) repeat-x 50% 61px; }
 
+.error404 #banner-wrapper,
 .single #banner-wrapper,
 .category #banner-wrapper,
 .page #banner-wrapper {
   padding-top: 61px;
   position: absolute;
   width: 100%; }
+  .error404 #banner-wrapper .wrapper,
   .single #banner-wrapper .wrapper,
   .category #banner-wrapper .wrapper,
   .page #banner-wrapper .wrapper {
@@ -198,24 +200,29 @@ body {
     height: 0px;
     padding-top: 130px;
     width: 100%; }
+  .error404 #banner-wrapper .banner,
   .single #banner-wrapper .banner,
   .category #banner-wrapper .banner,
   .page #banner-wrapper .banner {
     background: #334072 url(assets/img/int-bg-bass.jpg) no-repeat bottom center;
     height: 130px;
     width: 100%; }
+  .error404 #banner-wrapper .About,
   .single #banner-wrapper .About,
   .category #banner-wrapper .About,
   .page #banner-wrapper .About {
     background: #5e2b67 url(assets/img/int-bg-guitar.jpg) no-repeat bottom center; }
+  .error404 #banner-wrapper .Worship,
   .single #banner-wrapper .Worship,
   .category #banner-wrapper .Worship,
   .page #banner-wrapper .Worship {
     background: #006a6a url(assets/img/int-bg-set.jpg) no-repeat bottom center; }
+  .error404 #banner-wrapper .Contact,
   .single #banner-wrapper .Contact,
   .category #banner-wrapper .Contact,
   .page #banner-wrapper .Contact {
     background: #6f4b2a url(assets/img/int-bg-prayer.jpg) no-repeat bottom center; }
+  .error404 #banner-wrapper .Events,
   .single #banner-wrapper .Events,
   .category #banner-wrapper .Events,
   .page #banner-wrapper .Events {
