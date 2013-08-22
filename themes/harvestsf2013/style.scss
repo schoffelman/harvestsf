@@ -248,7 +248,8 @@ body {
 }
 
 #mobile-main-nav {
-    display: none;
+    position: absolute;
+    right: -100%;
 }
 
 nav#main_nav {
@@ -1024,26 +1025,32 @@ header {
     }
 
     #mobile-main-nav-button {
-        float: right;
         margin: 10px;
         position: absolute;
         right: 0px;
-        z-index: 20;
+        z-index: 20000;
     }
+
     #mobile-main-nav {
-        display: none;
+        padding-top: 62px;
+        -webkit-transition: .9s all ease;
+        -moz-transition: .9s all ease;
+        -o-transition: .9s all ease;
+        -ms-transition: .9s all ease;
+        transition: .9s all ease;
+        z-index: 10000;
     }
-    .mobile-main-nav-show{
+
+    .mobile-main-nav-show {
 
         #mobile-main-nav {
             background: $white;
-            display: block;
-            float: right;
             height: auto;
-            position: relative;
-            width: 40%;
             padding-top: 62px;
-
+            width: 40%;
+            right: 0;
+            top: 0;
+            position: absolute;
 
             -webkit-transition: .9s all ease;
             -moz-transition: .9s all ease;
@@ -1081,11 +1088,6 @@ header {
             ul>li>ul>li>a:hover {
                 text-decoration: underline;
             }
-        }
-        #wrapper {
-            float: left;
-            padding: 0 5%;
-            width: 50%;
         }
     }
     #wrapper {
@@ -1132,15 +1134,6 @@ header {
                 }
             }
         }
-        /*
-        .container {
-            -webkit-transition: .9s all ease;
-            -moz-transition: .9s all ease;
-            -o-transition: .9s all ease;
-            -ms-transition: .9s all ease;
-            transition: .9s all ease;
-        }
-        */
         #main_nav {
             h2 {
                 left:0;
@@ -1316,25 +1309,41 @@ header {
     body {
         padding: 0 0;
     }
+
     #mobile-main-nav-button {
-        float: right;
         margin: 10px;
         position: absolute;
         right: 0px;
-        z-index: 2000;
+        z-index: 20000;
     }
+
     #mobile-main-nav {
-        display: none;
+        padding-top: 62px;
+        -webkit-transition: .9s all ease;
+        -moz-transition: .9s all ease;
+        -o-transition: .9s all ease;
+        -ms-transition: .9s all ease;
+        transition: .9s all ease;
+        z-index: 10000;
     }
+
     .mobile-main-nav-show{
+
         #mobile-main-nav {
             background: $white;
-            display: block;
-            float: right;
             height: auto;
-            position: relative;
-            width: 40%;
             padding-top: 62px;
+            width: 40%;
+            right: 0;
+            top: 0;
+            position: absolute;
+
+            -webkit-transition: .9s all ease;
+            -moz-transition: .9s all ease;
+            -o-transition: .9s all ease;
+            -ms-transition: .9s all ease;
+            transition: .9s all ease;
+
             .menu-main-navigation-container {
                 background: $white url(assets/img/gradient-mobile-nav.png) repeat-y 0 44px;
                 border-top: 1px solid $gray_border;
@@ -1366,13 +1375,13 @@ header {
                 text-decoration: underline;
             }
         }
-        #wrapper {
-            float: left;
-            padding: 0 5%;
-            width: 50%;
-        }
     }
     #wrapper {
+        -webkit-transition: .9s all ease;
+        -moz-transition: .9s all ease;
+        -o-transition: .9s all ease;
+        -ms-transition: .9s all ease;
+        transition: .9s all ease;
         padding: 0 20px;
         #banner-wrapper {
             margin-left: -20px;
@@ -1546,6 +1555,9 @@ header {
                 }
             }
         }
+    }
+    #footer-wrapper {
+        clear: both;
     }
     #footer-body {
         .container {

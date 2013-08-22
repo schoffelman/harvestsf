@@ -38,10 +38,9 @@
     <script type="text/javascript">var switchTo5x=true;</script>
 	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 	<script type="text/javascript">stLight.options({publisher: "e66cc4c6-5267-408b-a467-e17f619e0353", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
-    <script>
+    <script type="text/javascript">
         $(function() {
             $( "#mobile-main-nav-button" ).on("click",function(e) {
-                e.preventDefault();
                 $( "html" ).toggleClass( 'mobile-main-nav-show' );
             });
         });
