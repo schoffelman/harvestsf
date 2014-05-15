@@ -200,6 +200,13 @@ body {
     height: 0px;
     padding-top: 130px;
     width: 100%; }
+  .error404 #banner-wrapper .banner,
+  .single #banner-wrapper .banner,
+  .category #banner-wrapper .banner,
+  .page #banner-wrapper .banner {
+    background: #5e2b67 url(assets/img/int-bg-guitar.jpg) no-repeat bottom center;
+    height: 130px;
+    width: 100%; }
   .error404 #banner-wrapper .About,
   .single #banner-wrapper .About,
   .category #banner-wrapper .About,
@@ -438,6 +445,28 @@ header {
       text-decoration: none; }
   #primary #content article .entry-content p {
     margin: 0 0 25px; }
+  #primary #content article .entry-content.event {
+    margin-bottom: 20px;
+    padding-bottom: 30px; }
+    #primary #content article .entry-content.event .date {
+      background: transparent url(assets/img/event-date-background.png) no-repeat 0 0;
+      float: left;
+      height: 70px;
+      margin-right: 35px;
+      width: 60px; }
+      #primary #content article .entry-content.event .date .month {
+        color: #f8f8f8;
+        font-size: 14px;
+        margin-top: 10px;
+        text-align: center;
+        text-transform: uppercase; }
+      #primary #content article .entry-content.event .date .day {
+        color: #e99134;
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center; }
+    #primary #content article .entry-content.event h3.title {
+      margin: 0 0; }
   #primary #content article .entry-meta {
     padding: 10px 0 30px; }
   #primary #content article ol, #primary #content article ul {

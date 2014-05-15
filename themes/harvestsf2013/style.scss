@@ -209,6 +209,8 @@ body {
 	background: transparent url(assets/img/header-background.png) repeat-x 50% 61px;
 }
 
+
+// This should work
 .error404,
 .single,
 .category,
@@ -223,6 +225,11 @@ body {
             padding-top: 130px;
             width: 100%;
         }
+				.banner {
+						background: #5e2b67 url(assets/img/int-bg-guitar.jpg) no-repeat bottom center;
+						height: 130px;
+						width: 100%;
+				}
         .About {
             background: #5e2b67 url(assets/img/int-bg-guitar.jpg) no-repeat bottom center;
         }
@@ -540,6 +547,33 @@ header {
                     margin: 0 0 25px;
                 }
             }
+						.entry-content.event {
+							margin-bottom: 20px;
+							padding-bottom: 30px;
+							.date {
+								background: transparent url(assets/img/event-date-background.png) no-repeat 0 0;
+								float: left;
+								height: 70px;
+								margin-right: 35px;
+								width: 60px;
+								.month {
+									color: $white;
+									font-size: 14px;
+									margin-top: 10px;
+									text-align: center;
+									text-transform: uppercase;
+								}
+								.day {
+									color: $footer_orange;
+									font-size: 20px;
+									margin-top: 10px;
+									text-align: center;
+								}
+							}
+							h3.title {
+								margin: 0 0;
+							}
+						}
 		 	.entry-meta {
 			 	padding: 10px 0 30px;
 		 	}

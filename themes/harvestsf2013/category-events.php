@@ -41,27 +41,26 @@ get_header(); ?>
 
             <?php $count += 1; if ($count&1) { $oddeven = 'odd'; } else { $oddeven = 'even'; } ?>
 
-            <article id="post-<?php the_ID(); ?>" class="listings span6 <?php echo $oddeven; ?>">
+            <?php $event_day = get_post_meta($post->ID, 'event_day', true); ?>
+            <?php $event_month = get_post_meta($post->ID, 'event_month', true); ?>
+            <?php $event_time = get_post_meta($post->ID, 'event_time', true); ?>
 
-                <div class="entry-content span12">
+            <article id="post-<?php the_ID(); ?>" class="listings span12 <?php echo $oddeven; ?>">
 
-                    <div class="thumb">
+                <div class="entry-content event span12">
 
-                        <h2 class="thumb-title"><a href="<?php echo get_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-
-                        <?php if (has_post_thumbnail()) {
-                            the_post_thumbnail( 'full-view' );
-                        } ?>
-
+                    <div class="date">
+                        <div class="month"><?php if(!empty($event_month)){echo $event_month;} ?></div>
+                        <div class="day"><?php if(!empty($event_day)){echo $event_day;} ?></div>
                     </div>
 
-                    <div class="excerpt">
+                    <h3 class="title">
 
-                        <?php echo substr(get_the_excerpt(), 0, 130); ?>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 
-                    </div>
+                    </h3>
 
-                    <a href="<?php echo get_permalink(); ?>" title="Read More >" class="readmore">Read More <img src="<?php echo get_template_directory_uri(); ?>/assets/img/orange-right-arrow.png" alt="" class="arrow"></a>
+                    <div class="time"><?php if(!empty($event_time)){echo $event_time;} ?></div>
 
                     <div class="clearboth"></div>
 
