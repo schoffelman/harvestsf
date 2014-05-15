@@ -10,16 +10,17 @@ register_nav_menu( 'Main Navigation', __( 'Main Navigation', 'harvestsf' ) );
  *
  */
 function harvestsf_widgets_init() {
+
     register_sidebar( array(
-        'name' => __( 'Overview Sidebar', 'harvestsf' ),
-        'id' => 'overview-sidebar',
-        'description' => __( 'Appears on the homepage banner section', 'harvestsf' ),
+        'name' => __( 'Page Sidebar', 'harvestsf' ),
+        'id' => 'page-sidebar',
+        'description' => __( 'Appears on general pages in the right sidebar', 'harvestsf' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div></aside>',
+        'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3><div class="visible-desktop">',
+        'after_title' => '</h3>',
     ) );
-    
+
     register_sidebar( array(
         'name' => __( 'Event Sidebar', 'harvestsf' ),
         'id' => 'event-sidebar',
@@ -31,9 +32,9 @@ function harvestsf_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name' => __( 'Int Events Sidebar', 'harvestsf' ),
-        'id' => 'int-events-sidebar',
-        'description' => __( 'Appears on the interior event pages. Also used as the default sidebar.', 'harvestsf' ),
+        'name' => __( 'Blog Sidebar', 'harvestsf' ),
+        'id' => 'blog-sidebar',
+        'description' => __( 'Appears on the interior blog pages. Also used as the default sidebar.', 'harvestsf' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
@@ -69,6 +70,36 @@ function harvestsf_widgets_init() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
+
+    register_sidebar( array(
+        'name' => __( 'Int Events Sidebar', 'harvestsf' ),
+        'id' => 'int-events-sidebar',
+        'description' => __( 'Appears on the interior event pages', 'harvestsf' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Overview Sidebar', 'harvestsf' ),
+        'id' => 'overview-sidebar',
+        'description' => __( 'Appears on the homepage banner section', 'harvestsf' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div></aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3><div class="visible-desktop">',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Footer Sidebar', 'harvestsf' ),
+        'id' => 'footer-sidebar',
+        'description' => __( 'Sidebar appearing in the footer', 'harvestsf' ),
+        'before_widget' => '<aside id="%1$s" class="widget insta %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title hidden">',
+        'after_title' => '</h3>',
+    ) );
 }
 
 
@@ -78,4 +109,3 @@ add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( '300', '198' );
 add_image_size( 'slider', '620', '600' );
 add_image_size( 'full-view', '620', '400' );
-
