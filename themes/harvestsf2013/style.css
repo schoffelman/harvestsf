@@ -200,13 +200,6 @@ body {
     height: 0px;
     padding-top: 130px;
     width: 100%; }
-  .error404 #banner-wrapper .banner,
-  .single #banner-wrapper .banner,
-  .category #banner-wrapper .banner,
-  .page #banner-wrapper .banner {
-    background: #334072 url(assets/img/int-bg-bass.jpg) no-repeat bottom center;
-    height: 130px;
-    width: 100%; }
   .error404 #banner-wrapper .About,
   .single #banner-wrapper .About,
   .category #banner-wrapper .About,
@@ -579,8 +572,8 @@ header {
             text-transform: uppercase; }
           #primary #sidebar .widget_recent_entries ul li.crpw-item .crpw-date .day {
             color: #e99134;
-            font-size: 32px;
-            margin-top: 5px;
+            font-size: 20px;
+            margin-top: 10px;
             text-align: center; }
         #primary #sidebar .widget_recent_entries ul li.crpw-item .event {
           float: left;

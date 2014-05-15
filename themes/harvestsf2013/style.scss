@@ -223,11 +223,6 @@ body {
             padding-top: 130px;
             width: 100%;
         }
-        .banner {
-            background: #334072 url(assets/img/int-bg-bass.jpg) no-repeat bottom center;
-            height: 130px;
-            width: 100%;
-        }
         .About {
             background: #5e2b67 url(assets/img/int-bg-guitar.jpg) no-repeat bottom center;
         }
@@ -417,14 +412,14 @@ header {
 
 .home {
 	header {
-		height: 620px;		
+		height: 620px;
         nav#main_nav {
             .nav-menu {
         		li:hover {
         			.sub-menu {
             			margin-top: 3px;
         			}
-                }	
+                }
     	    }
         }
 		.banner {
@@ -717,8 +712,8 @@ header {
 						}
 						.day {
 							color: $footer_orange;
-							font-size: 32px;
-							margin-top: 5px;
+							font-size: 20px;
+							margin-top: 10px;
 							text-align: center;
 						}
 					}
@@ -729,7 +724,7 @@ header {
 						.title {
 							a {
 								font-family: 20px;
-								text-decoration: none;								
+								text-decoration: none;
 							}
 						}
 						.time {
@@ -767,7 +762,7 @@ header {
 }
 
 #footer-body {
-	background: $main_color;	
+	background: $main_color;
 	min-height: 465px;
 	.container {
 		position: relative;
@@ -781,7 +776,7 @@ header {
 			padding: 17px 70px;
 			position: absolute;
 			text-transform: uppercase;
-			top: 0;	
+			top: 0;
 			width: 480px;
 			div {
 				float: left;
@@ -813,7 +808,7 @@ header {
 						color: $gray_bg;
 						font-size: 17px;
 						font-weight: 100;
-						line-height: 16px;	
+						line-height: 16px;
 						span {
 							color: $white;
 						}
@@ -893,7 +888,7 @@ header {
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { 
+@media (min-width: 768px) and (max-width: 979px) {
     .home {
         #wrapper {
     	    background: transparent url(assets/img/header-background-580.png) repeat-x 50% 61px;
@@ -979,14 +974,14 @@ header {
                             margin-left: 20px;
                             margin-top: 10px;
                         }
-                        .event { 
+                        .event {
                             width: 108px;
                         }
                     }
                 }
-            } 
+            }
         }
-    } 
+    }
     #footer-body {
         .container {
             footer {
@@ -1018,7 +1013,7 @@ header {
         }
     }
 }
- 
+
 /* Landscape phone to portrait tablet */
 @media (min-width: 481px) and (max-width: 767px) {
     body {
@@ -1304,7 +1299,7 @@ header {
         }
     }
 }
- 
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
     body {
@@ -1606,5 +1601,3 @@ header {
         }
     }
 }
-
-
